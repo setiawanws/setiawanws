@@ -9,6 +9,7 @@
 ```
 <!-- DIVIDER -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
 ## 📬 Connect with Me
 <a href="https://instagram.com/setiawanws.me">
 <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
@@ -22,18 +23,6 @@
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 </br>
-
-<!-- DIVIDER -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-## 🚀 Tech Stack
-
-- HTML
-- PHP
-- Laravel
-- CodeIgniter
-- MySQL
-
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 ## 📂 Project
@@ -42,15 +31,17 @@
 - Data Center Monitoring
 - BPKH Information System
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+## 🚀 Tech Stack
 
-## 💻 Frontend
+💻 Frontend
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 <p>
   <img src="https://skillicons.dev/icons?i=html,css,js,react,vue,bootstrap" />
 </p>
 
-## ⚙️ Backend
+⚙️ Backend
 
 <p>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg" width="48" height="48" alt="CodeIgniter"/>
@@ -58,7 +49,7 @@
   <img src="https://skillicons.dev/icons?i=php,laravel,mysql,postgresql" />
 </p>
 
-## 🛠️ Tools
+🛠️ Tools
 
 <p>
   <img src="https://skillicons.dev/icons?i=github,vscode,sublime,postman,docker" />
