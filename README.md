@@ -7,7 +7,8 @@
 💼 11 tahun di bidang IT, termasuk 6+ tahun sebagai web Developer.
 🚀 Laravel | CodeIgniter | MySQL
 ```
-
+<!-- DIVIDER -->
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 ## 📬 Connect with Me
 <a href="https://instagram.com/setiawanws.me">
 <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
@@ -22,10 +23,11 @@
 </a>
 </br>
 
-
-## 🚀 Tech Stack
 <!-- DIVIDER -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+## 🚀 Tech Stack
+
 - HTML
 - PHP
 - Laravel
@@ -40,8 +42,7 @@
 - Data Center Monitoring
 - BPKH Information System
 
----
-
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 ## 💻 Frontend
 
