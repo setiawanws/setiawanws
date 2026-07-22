@@ -51,20 +51,7 @@
 
 
 
-# Activity & Contribution
-<p align="center">
-<img width="100%"
-src="https://github-readme-activity-graph.vercel.app/graph?username=setiawanws&theme=tokyo-night&hide_border=true"/>
 
-</p>
-
-<picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/setiawanws/setiawanws/output-pacman/pacman-contribution-graph-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/setiawanws/setiawanws/output-pacman/pacman-contribution-graph.svg">
-    <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/setiawanws/setiawanws/output-pacman/pacman-contribution-graph.svg">
-</picture>
-
-----
 
 # 🔥 GitHub Streak
 
@@ -81,12 +68,38 @@ src="https://streak-stats.demolab.com?user=setiawanws&theme=tokyonight&hide_bord
 
 ---
 
+# Activity & Contribution
+<p align="center">
+<img width="100%"
+src="https://github-readme-activity-graph.vercel.app/graph?username=setiawanws&theme=tokyo-night&hide_border=true"/>
+
+</p>
+
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/setiawanws/setiawanws/output-pacman/pacman-contribution-graph-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/setiawanws/setiawanws/output-pacman/pacman-contribution-graph.svg">
+    <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/setiawanws/setiawanws/output-pacman/pacman-contribution-graph.svg">
+</picture>
+
+----
+
 # 🐍 Contribution Snake
 
 <p align="center">
 
-<img
-src="https://raw.githubusercontent.com/setiawanws/setiawanws/output/github-contribution-grid-snake-dark.svg"/>
+<p align="center">
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/setiawanws/setiawanws/output/github-contribution-grid-snake-dark.svg" />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://raw.githubusercontent.com/setiawanws/setiawanws/output/github-contribution-grid-snake.svg" />
+    <img
+      alt="GitHub Contribution Snake"
+      src="https://raw.githubusercontent.com/setiawanws/setiawanws/output/github-contribution-grid-snake.svg" />
+  </picture>
+</p>
 
 </p>
 
