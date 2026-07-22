@@ -55,5 +55,19 @@
   <img src="https://skillicons.dev/icons?i=github,vscode,sublime,postman,docker" />
 </p>
 
+## 📊 GitHub Statistics
+
+<img src="https://github-readme-stats.vercel.app/api?username=setiawanws&show_icons=true&theme=tokyonight"/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=setiawanws&layout=compact&theme=tokyonight"/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=setiawanws&theme=tokyo-night"/>
+
+## 🐍 Contribution Graph
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/setiawanws/setiawanws/output/github-contribution-grid-snake.svg">
+</p>
+
 <!-- ANIMATED FOOTER -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%" />
