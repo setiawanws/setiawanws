@@ -1,8 +1,8 @@
 <!-- ================= HEADER ================= -->
 
 <p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=gradient&customColorList=6,11,20&text=Eko%20Setiawan&fontAlignY=35&fontSize=42&fontColor=ffffff&desc=Web%20Developer%20|%20Laravel Developer%20|%20Backend Developer&descAlignY=55" width="100%">
-</img>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=gradient&customColorList=6,11,20&text=Eko%20Setiawan&fontAlignY=35&fontSize=42&fontColor=ffffff&desc=Web%20Developer%20|%20Laravel Developer%20|%20Backend Developer&descAlignY=55" width="100%" />
+
 
 # 👨‍💻 About Me
 
