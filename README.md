@@ -7,8 +7,12 @@
 
 
 # 👨‍💻 About Me
+```yaml
+Saya merupakan lulusan Universitas Bina Nusantara (BINUS University) dengan pengalaman lebih dari 11 tahun di bidang teknologi informasi. Saya memiliki komitmen tinggi terhadap pekerjaan, mampu bekerja secara individu maupun dalam tim, serta selalu berusaha untuk terus belajar, berkembang, dan memberikan kontribusi yang positif di setiap kesempatan.
+```
+---
 
->*Saya merupakan lulusan Universitas Bina Nusantara (BINUS University) dengan pengalaman lebih dari 11 tahun di bidang teknologi informasi. Saya memiliki komitmen tinggi terhadap pekerjaan, mampu bekerja secara individu maupun dalam tim, serta selalu berusaha untuk terus belajar, berkembang, dan memberikan kontribusi yang positif di setiap kesempatan.*
+>*I am a graduate of BINUS University (Bina Nusantara University) with over 11 years of experience in the Information Technology industry. I am highly committed to delivering quality work, capable of working effectively both independently and collaboratively within a team, and consistently strive to learn, grow, and make meaningful contributions in every professional opportunity.*
 
 <!-- PROFILE VIEWS + FOLLOWERS BADGES -->
 ![Profile Views](https://komarev.com/ghpvc/?username=setiawanws&style=for-the-badge&color=00d4ff&label=PROFILE+VIEWS)
@@ -41,11 +45,15 @@
 
 # 📂 Projects
 
-| Project | Description |
-|---------|-------------|
-| 📦 Inventory Management | Membangun aplikasi inventaris internal perusahaan bersama tim untuk mendukung pengelolaan aset dan stok. |
-| 🖥 Data Center Monitoring (DCOSS) | Mengembangkan dashboard pemantauan real-time untuk memonitor sensor suhu dan kelembapan pada infrastruktur data center. |
-| 🏦 Aplikasi Kepatuhan | Membangun sistem informasi kepatuhan bersama tim untuk mendukung proses bisnis dan kebutuhan regulasi di BPKH. |
+| Project |Year| Description |
+|---------|----|--------|
+|🏗️PLB/GB/INKABER| 2022 - 2026 |Mengembangkan varian sistem informasi persediaan (IT Inventory) berbasis web untuk memenuhi ketentuan kepabeanan Direktorat Jenderal Bea dan Cukai. </br> *Designed and developed multiple variants of a web-based (IT Inventory) Information System to ensure compliance with the customs regulations of the Directorate General of Customs and Excise.*  |
+| 🖥 Data Center Monitoring (DCOSS) |2021 - 2022| Mengembangkan dashboard pemantauan real-time untuk memonitor sensor suhu dan kelembapan pada infrastruktur data center. </br> *Developed a real-time monitoring dashboard to track temperature and humidity sensors across data center infrastructure.* |
+| 🏦 Aplikasi Kepatuhan |2020 - 2021| Membangun dan mengembangkan sistem informasi kepatuhan bersama tim untuk mendukung proses bisnis dan kebutuhan regulasi di BPKH.</br> *Collaborated with a development team to build and enhance a compliance information system that supports business processes and regulatory requirements at BPKH.* |
+| 📦 Inventory Management |2017-2019| Membangun aplikasi inventaris internal perusahaan bersama tim untuk mendukung pengelolaan aset dan stok. </br> *Collaborated with a development team to build an internal inventory management system for managing company assets and inventory.*|
+
+
+
 
 <!-- DIVIDER -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
@@ -108,7 +116,6 @@ src="https://github-readme-activity-graph.vercel.app/graph?username=setiawanws&t
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/setiawanws/setiawanws/output-pacman/pacman-contribution-graph.svg">
     <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/setiawanws/setiawanws/output-pacman/pacman-contribution-graph.svg">
 </picture>
-
 <picture>
     <source
         media="(prefers-color-scheme: dark)"
@@ -124,11 +131,5 @@ src="https://github-readme-activity-graph.vercel.app/graph?username=setiawanws&t
 ---
 
 
+<img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=gradient&customColorList=6,11,20&text=© 2015 - 2026 Eko Setiawan. All rights reserved. &fontAlignY=70&fontSize=12&section=footer"/>
 
-
-
-<p align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=gradient&customColorList=6,11,20&section=footer"/>
-
-</p>
