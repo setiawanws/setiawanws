@@ -102,14 +102,17 @@ src="https://streak-stats.demolab.com?user=setiawanws&theme=tokyonight&hide_bord
 
 ## 🎵 Currently Listening
 <!-- SPOTIFY:START -->
-```text
+<!-- ```text
 🎧 Loading Spotify...
 👤 ...
 💿 ...
 ⏱ ...
 ██████████░░░░░░
-```
+``` -->
 <!-- SPOTIFY:END -->
+
+[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=31qz7epc5p6sio5hnn6ccae4mbda&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=true&profanity=false&hide_remaster=false&bar_color=16c6e9&bar_color_cover=true)](https://github.com/kittinan/spotify-github-profile)
+
 
 <!-- DIVIDER -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
