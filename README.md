@@ -138,5 +138,5 @@ src="https://github-readme-activity-graph.vercel.app/graph?username=setiawanws&t
 ---
 
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=gradient&customColorList=6,11,20&text=© 2015 - 2026 Eko Setiawan. All rights reserved. &fontAlignY=70&fontSize=12&section=footer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=gradient&customColorList=6,11,20&text=©%202015%20-%202026%20Eko%20Setiawan. All%20rights%20reserved.&fontAlignY=70&fontSize=12&section=footer"/>
 
