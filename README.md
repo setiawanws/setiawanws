@@ -143,6 +143,6 @@ src="https://github-readme-activity-graph.vercel.app/graph?username=setiawanws&t
 </p>
 
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=gradient&customColorList=6,11,20&text=%C2%A9%202015%20-%202026%20Eko%20Setiawan%20%7C%20All%20Rights%20Reserved&fontAlignY=68&fontSize=12&descAlignY=88&descSize=12&section=footer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&width=100%&height=120&color=gradient&customColorList=6,11,20&text=%C2%A9%202015%20-%202026%20Eko%20Setiawan%20%7C%20All%20Rights%20Reserved&fontAlignY=68&fontSize=12&descAlignY=88&descSize=12&section=footer"/>
 
 
