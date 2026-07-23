@@ -107,7 +107,8 @@ src="https://streak-stats.demolab.com?user=setiawanws&theme=tokyonight&hide_bord
 
 
 <!-- SPOTIFY:START -->
-Loading Spotify...
+🎧 **Wool Gloves** - Idyllyn
+💿 1 PM Study Session
 <!-- SPOTIFY:END -->
 
 <!-- DIVIDER -->
