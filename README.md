@@ -20,10 +20,12 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 # 📬 Connect with Me
+<p>
+
 <!-- PROFILE VIEWS + FOLLOWERS BADGES -->
 ![Profile Views](https://komarev.com/ghpvc/?username=setiawanws&style=for-the-badge&color=00d4ff&label=PROFILE+VIEWS)
 ![GitHub followers](https://img.shields.io/github/followers/setiawanws?style=for-the-badge&color=7c3aed&labelColor=0d1117&label=FOLLOWERS)
-<p>
+
 
 <a href="mailto:setiawanws.me@gmail.com">
 <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white">
