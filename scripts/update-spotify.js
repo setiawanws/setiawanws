@@ -1,75 +1,87 @@
 const fs = require("fs");
-const axios = require("axios");
 
-const README = "./README.md";
+let readme = fs.readFileSync("./README.md", "utf8");
 
-async function getAccessToken() {
-    const params = new URLSearchParams();
+readme = readme.replace(
+    /<!-- SPOTIFY:START -->([\s\S]*?)<!-- SPOTIFY:END -->/,
+    `<!-- SPOTIFY:START -->
+✅ TEST BERHASIL
+<!-- SPOTIFY:END -->`
+);
 
-    params.append("grant_type", "refresh_token");
-    params.append("refresh_token", process.env.SPOTIFY_REFRESH_TOKEN);
+fs.writeFileSync("./README.md", readme);
 
-    const res = await axios.post(
-        "https://accounts.spotify.com/api/token",
-        params,
-        {
-            headers: {
-                Authorization:
-                    "Basic " +
-                    Buffer.from(
-                        process.env.SPOTIFY_CLIENT_ID +
-                            ":" +
-                            process.env.SPOTIFY_CLIENT_SECRET
-                    ).toString("base64"),
-                "Content-Type": "application/x-www-form-urlencoded",
-            },
-        }
-    );
+console.log("DONE");
 
-    return res.data.access_token;
-}
+// const fs = require("fs");
+// const axios = require("axios");
 
-async function getCurrentTrack(token) {
-    try {
-        const res = await axios.get(
-            "https://api.spotify.com/v1/me/player/currently-playing",
-            {
-                headers: {
-                    Authorization: `Bearer ${token}`,
-                },
-            }
-        );
+// const README = "./README.md";
 
-        if (res.status !== 200 || !res.data.item) {
-            return "🎧 Not playing anything right now.";
-        }
+// async function getAccessToken() {
+//     const params = new URLSearchParams({
+//         grant_type: "refresh_token",
+//         refresh_token: process.env.SPOTIFY_REFRESH_TOKEN,
+//     });
 
-        const track = res.data.item.name;
-        const artist = res.data.item.artists
-            .map((a) => a.name)
-            .join(", ");
+//     const { data } = await axios.post(
+//         "https://accounts.spotify.com/api/token",
+//         params,
+//         {
+//             headers: {
+//                 Authorization:
+//                     "Basic " +
+//                     Buffer.from(
+//                         `${process.env.SPOTIFY_CLIENT_ID}:${process.env.SPOTIFY_CLIENT_SECRET}`
+//                     ).toString("base64"),
+//                 "Content-Type": "application/x-www-form-urlencoded",
+//             },
+//         }
+//     );
 
-        const album = res.data.item.album.name;
+//     return data.access_token;
+// }
 
-        return `🎧 **${track}** - ${artist}\n💿 ${album}`;
-    } catch (err) {
-        return "🎧 Not playing anything right now.";
-    }
-}
+// async function getCurrentTrack(token) {
+//     try {
+//         const { data } = await axios.get(
+//             "https://api.spotify.com/v1/me/player/currently-playing",
+//             {
+//                 headers: {
+//                     Authorization: `Bearer ${token}`,
+//                 },
+//                 validateStatus: () => true,
+//             }
+//         );
 
-(async () => {
-    const token = await getAccessToken();
+//         if (!data || !data.item) {
+//             return "🎧 Not playing anything right now.";
+//         }
 
-    const spotify = await getCurrentTrack(token);
+//         return `🎧 **${data.item.name}**\n👤 ${data.item.artists.map(a => a.name).join(", ")}\n💿 ${data.item.album.name}`;
+//     } catch (e) {
+//         console.error(e.response?.data || e.message);
+//         return "🎧 Unable to fetch Spotify.";
+//     }
+// }
 
-    let readme = fs.readFileSync(README, "utf8");
+// (async () => {
+//     console.log("Getting token...");
+//     const token = await getAccessToken();
 
-    readme = readme.replace(
-        /<!-- SPOTIFY:START -->([\s\S]*?)<!-- SPOTIFY:END -->/,
-        `<!-- SPOTIFY:START -->\n${spotify}\n<!-- SPOTIFY:END -->`
-    );
+//     console.log("Getting current track...");
+//     const spotify = await getCurrentTrack(token);
 
-    fs.writeFileSync(README, readme);
+//     console.log(spotify);
 
-    console.log("README updated.");
-})();
+//     const readme = fs.readFileSync(README, "utf8");
+
+//     const updated = readme.replace(
+//         /<!-- SPOTIFY:START -->([\s\S]*?)<!-- SPOTIFY:END -->/,
+//         `<!-- SPOTIFY:START -->\n${spotify}\n<!-- SPOTIFY:END -->`
+//     );
+
+//     fs.writeFileSync(README, updated);
+
+//     console.log("README updated.");
+// })();

@@ -26,7 +26,6 @@
 ![Profile Views](https://komarev.com/ghpvc/?username=setiawanws&style=for-the-badge&color=00d4ff&label=PROFILE+VIEWS)
 ![GitHub followers](https://img.shields.io/github/followers/setiawanws?style=for-the-badge&color=7c3aed&labelColor=0d1117&label=FOLLOWERS)
 
-
 <a href="mailto:setiawanws.me@gmail.com">
 <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white">
 </a>
@@ -53,8 +52,6 @@
 | 🖥 Data Center Monitoring (DCOSS) |2021 - 2022| Mengembangkan dashboard pemantauan real-time untuk memonitor sensor suhu dan kelembapan pada infrastruktur data center. </br> *Developed a real-time monitoring dashboard to track temperature and humidity sensors across data center infrastructure.* |
 | 🏦 Aplikasi Kepatuhan |2020 - 2021| Membangun dan mengembangkan sistem informasi kepatuhan bersama tim untuk mendukung proses bisnis dan kebutuhan regulasi di BPKH.</br> *Collaborated with a development team to build and enhance a compliance information system that supports business processes and regulatory requirements at BPKH.* |
 | 📦 Inventory Management |2017-2019| Membangun aplikasi inventaris internal perusahaan bersama tim untuk mendukung pengelolaan aset dan stok. </br> *Collaborated with a development team to build an internal inventory management system for managing company assets and inventory.*|
-
-
 
 
 <!-- DIVIDER -->
@@ -104,8 +101,6 @@ src="https://streak-stats.demolab.com?user=setiawanws&theme=tokyonight&hide_bord
 </p>
 
 ## 🎵 Currently Listening
-
-
 <!-- SPOTIFY:START -->
 Loading Spotify...
 <!-- SPOTIFY:END -->
