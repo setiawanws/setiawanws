@@ -9,10 +9,10 @@
 # 👨‍💻 About Me
 <!-- ```yaml 
 ``` -->
->*Saya merupakan lulusan Universitas Bina Nusantara (BINUS University) dengan pengalaman lebih dari 11 tahun di bidang teknologi informasi. Saya memiliki komitmen tinggi terhadap pekerjaan, mampu bekerja secara individu maupun dalam tim, serta selalu berusaha untuk terus belajar, berkembang, dan memberikan kontribusi yang positif di setiap kesempatan.*
-
+>Saya merupakan lulusan Universitas Bina Nusantara (BINUS University) dengan pengalaman lebih dari 11 tahun di bidang teknologi informasi. Saya memiliki komitmen tinggi terhadap pekerjaan, mampu bekerja secara individu maupun dalam tim, serta selalu berusaha untuk terus belajar, berkembang, dan memberikan kontribusi yang positif di setiap kesempatan.
 ---
-*I am a graduate of BINUS University (Bina Nusantara University) with over 11 years of experience in the Information Technology industry. I am highly committed to delivering quality work, capable of working effectively both independently and collaboratively within a team, and consistently strive to learn, grow, and make meaningful contributions in every professional opportunity.*
+> *I am a graduate of BINUS University (Bina Nusantara University) with over 11 years of experience in the Information Technology industry. I am highly committed to delivering quality work, capable of working effectively both independently and collaboratively within a team, and consistently strive to learn, grow, and make meaningful contributions in every professional opportunity.*
+
 
 <!-- PROFILE VIEWS + FOLLOWERS BADGES -->
 ![Profile Views](https://komarev.com/ghpvc/?username=setiawanws&style=for-the-badge&color=00d4ff&label=PROFILE+VIEWS)
