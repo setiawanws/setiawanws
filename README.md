@@ -5,13 +5,13 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=gradient&customColorList=6,11,20&text=Eko%20Setiawan&fontAlignY=35&fontSize=42&fontColor=ffffff&desc=Web%20Developer%20%7C%20Laravel%20Developer%20%7C%20Backend%20Developer&descAlignY=55" width="100%" />
 
-
 # 👨‍💻 About Me
 <!-- ```yaml 
 ``` -->
->Saya merupakan lulusan Universitas Bina Nusantara (BINUS University) dengan pengalaman lebih dari 11 tahun di bidang teknologi informasi. Saya memiliki komitmen tinggi terhadap pekerjaan, mampu bekerja secara individu maupun dalam tim, serta selalu berusaha untuk terus belajar, berkembang, dan memberikan kontribusi yang positif di setiap kesempatan.
+>Saya merupakan lulusan Universitas Bina Nusantara (BINUS University) dengan pengalaman lebih dari 11 tahun di bidang Teknologi Informasi (IT). Saya memiliki komitmen tinggi dalam menghasilkan pekerjaan yang berkualitas, mampu bekerja secara mandiri maupun dalam tim, serta memiliki semangat untuk terus belajar, mengembangkan kemampuan, dan memberikan kontribusi yang positif bagi setiap organisasi tempat saya berkarya.
+
 ---
-> *I am a graduate of BINUS University (Bina Nusantara University) with over 11 years of experience in the Information Technology industry. I am highly committed to delivering quality work, capable of working effectively both independently and collaboratively within a team, and consistently strive to learn, grow, and make meaningful contributions in every professional opportunity.*
+> *A graduate of BINUS University (Bina Nusantara University), I have more than 11 years of experience in the Information Technology (IT) industry. Throughout my career, I have demonstrated a strong work ethic, adaptability, and the ability to perform effectively both independently and as part of a team. I am committed to continuous learning, professional development, and delivering positive contributions that support organizational success.*
 
 
 
