@@ -114,6 +114,7 @@ src="https://github-readme-activity-graph.vercel.app/graph?username=setiawanws&t
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/setiawanws/setiawanws/output-pacman/pacman-contribution-graph.svg">
     <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/setiawanws/setiawanws/output-pacman/pacman-contribution-graph.svg">
 </picture>
+
 <picture>
     <source
         media="(prefers-color-scheme: dark)"
@@ -128,9 +129,6 @@ src="https://github-readme-activity-graph.vercel.app/graph?username=setiawanws&t
 
 ---
 ## 🎵 Currently Listening
-
-
-<!-- [![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=31qz7epc5p6sio5hnn6ccae4mbda&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=true&profanity=false&hide_remaster=false&bar_color=16c6e9&bar_color_cover=true)](https://github.com/kittinan/spotify-github-profile) -->
 
 <p align="center">
   <a href="https://github.com/kittinan/spotify-github-profile">
