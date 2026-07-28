@@ -90,9 +90,9 @@
 # 🔥 GitHub Streak
 
 <p width='100%' >
-<img width="50%" align='left' src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=setiawanws&theme=tokyonight"/>
+<img  align='left' src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=setiawanws&theme=tokyonight"/>
 
-<img width="50%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=setiawanws&theme=tokyonight"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=setiawanws&theme=tokyonight"/>
 </p>
 
 <!-- <p width='100%'>
