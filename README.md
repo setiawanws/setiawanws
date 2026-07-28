@@ -95,13 +95,13 @@
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=setiawanws&theme=tokyonight"/>
 </p>
 
-<!-- <p width='100%'>
-<img width="50%" align='left' src="https://github-readme-mwendwa.vercel.app/api/top-langs/?username=setiawanws&layout=compact&count_private=true&theme=tokyonight" alt="Top Languages" />
+<p width='100%'>
+<img align='left' src="https://github-readme-mwendwa.vercel.app/api/top-langs/?username=setiawanws&layout=compact&count_private=true&theme=tokyonight" alt="Top Languages" />
 
-<img width="50%" src="https://github-readme-mwendwa.vercel.app/api?username=setiawanws&show_icons=true&count_private=true&line_height=20&theme=tokyonight" alt="GitHub Stats" />
+<img src="https://github-readme-mwendwa.vercel.app/api?username=setiawanws&show_icons=true&count_private=true&line_height=20&theme=tokyonight" alt="GitHub Stats" />
 
-<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=setiawanws&theme=tokyonight"/>
-</p> -->
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=setiawanws&theme=tokyonight"/>
+</p>
 
 <!-- DIVIDER -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
