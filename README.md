@@ -8,14 +8,10 @@
 # 👨‍💻 About Me
 <!-- ```yaml 
 ``` -->
- ```yaml
-Profesional di bidang Teknologi Informasi (IT) dengan pengalaman lebih dari 11 tahun dan lulusan Universitas Bina Nusantara (BINUS University). Berpengalaman dalam mengembangkan solusi teknologi, menyelesaikan permasalahan secara efektif, serta mendukung peningkatan kinerja organisasi melalui penerapan teknologi yang tepat.
-Memiliki kemampuan bekerja secara mandiri maupun kolaboratif, cepat beradaptasi dengan perubahan, dan berorientasi pada hasil. Saya percaya bahwa pembelajaran berkelanjutan merupakan kunci untuk menghadapi perkembangan teknologi, sehingga saya senantiasa meningkatkan kompetensi profesional dan memberikan kontribusi terbaik dalam setiap proyek maupun organisasi yang saya dukungi. 
-```
+> Profesional di bidang Teknologi Informasi (IT) dengan pengalaman lebih dari 11 tahun dan lulusan Universitas Bina Nusantara (BINUS University). Berpengalaman dalam mengembangkan solusi teknologi, menyelesaikan permasalahan secara efektif, serta mendukung peningkatan kinerja organisasi melalui penerapan teknologi yang tepat. Memiliki kemampuan bekerja secara mandiri maupun kolaboratif, cepat beradaptasi dengan perubahan, dan berorientasi pada hasil. Saya percaya bahwa pembelajaran berkelanjutan merupakan kunci untuk menghadapi perkembangan teknologi, sehingga saya senantiasa meningkatkan kompetensi profesional dan memberikan kontribusi terbaik dalam setiap proyek maupun organisasi yang saya dukungi.
 
 ---
-> *Information Technology (IT) professional with over 11 years of experience and a graduate of BINUS University (Bina Nusantara University). Experienced in developing technology solutions, solving complex technical challenges, and enhancing organizational performance through the effective implementation of technology.
-Skilled at working both independently and collaboratively, with strong adaptability to changing environments and a results-oriented mindset. Committed to continuous learning and professional development to keep pace with evolving technologies, while consistently delivering high-quality contributions to every project and organization.*
+>*Information Technology (IT) professional with over 11 years of experience and a graduate of BINUS University (Bina Nusantara University). Experienced in developing technology solutions, solving complex technical challenges, and enhancing organizational performance through the effective implementation of technology. Skilled at working both independently and collaboratively, with strong adaptability to changing environments and a results-oriented mindset. Committed to continuous learning and professional development to keep pace with evolving technologies, while consistently delivering high-quality contributions to every project and organization.*
 
 
 
