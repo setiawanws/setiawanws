@@ -8,7 +8,8 @@
 # 👨‍💻 About Me
 <!-- ```yaml 
 ``` -->
->Saya merupakan lulusan Universitas Bina Nusantara (BINUS University) dengan pengalaman lebih dari 11 tahun di bidang Teknologi Informasi (IT). Saya memiliki komitmen tinggi dalam menghasilkan pekerjaan yang berkualitas, mampu bekerja secara mandiri maupun dalam tim, serta memiliki semangat untuk terus belajar, mengembangkan kemampuan, dan memberikan kontribusi yang positif bagi setiap organisasi tempat saya berkarya.
+>Profesional di bidang Teknologi Informasi (IT) dengan pengalaman lebih dari 11 tahun dan lulusan Universitas Bina Nusantara (BINUS University). Berpengalaman dalam mengembangkan solusi teknologi, menyelesaikan permasalahan secara efektif, serta mendukung peningkatan kinerja organisasi melalui penerapan teknologi yang tepat.
+Memiliki kemampuan bekerja secara mandiri maupun kolaboratif, cepat beradaptasi dengan perubahan, dan berorientasi pada hasil. Saya percaya bahwa pembelajaran berkelanjutan merupakan kunci untuk menghadapi perkembangan teknologi, sehingga saya senantiasa meningkatkan kompetensi profesional dan memberikan kontribusi terbaik dalam setiap proyek maupun organisasi yang saya dukungi.
 
 ---
 > *A graduate of BINUS University (Bina Nusantara University), I have more than 11 years of experience in the Information Technology (IT) industry. Throughout my career, I have demonstrated a strong work ethic, adaptability, and the ability to perform effectively both independently and as part of a team. I am committed to continuous learning, professional development, and delivering positive contributions that support organizational success.*
