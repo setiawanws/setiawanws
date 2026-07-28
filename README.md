@@ -127,18 +127,7 @@ src="https://github-readme-activity-graph.vercel.app/graph?username=setiawanws&t
         src="https://raw.githubusercontent.com/setiawanws/setiawanws/output/github-contribution-grid-snake.svg" />
 </picture>
 
----
-## 🎵 Currently Listening
 
-<p align="center">
-  <a href="https://github.com/kittinan/spotify-github-profile">
-    <img
-      src="https://spotify-github-profile.kittinanx.com/api/view?uid=31qz7epc5p6sio5hnn6ccae4mbda&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=true&profanity=false&hide_remaster=false&bar_color=16c6e9&bar_color_cover=true"
-      width="100%"
-      alt="Spotify Now Playing"
-    />
-  </a>
-</p>
 
 
 <img src="https://capsule-render.vercel.app/api?type=waving&width=100%&height=120&color=gradient&customColorList=6,11,20&text=%C2%A9%202015%20-%202026%20Eko%20Setiawan%20%7C%20All%20Rights%20Reserved&fontAlignY=68&fontSize=12&descAlignY=88&descSize=12&section=footer"/>
