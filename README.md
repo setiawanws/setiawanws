@@ -91,8 +91,7 @@
 
 <p align="center">
 
-<img
-src="https://streak-stats.demolab.com?user=setiawanws&theme=tokyonight&hide_border=true" />
+<img src="https://streak-stats.demolab.com?user=setiawanws&theme=tokyonight&hide_border=true" />
 
 <img src="https://github-readme-mwendwa.vercel.app/api?username=setiawanws&show_icons=true&count_private=true&line_height=20&theme=tokyonight" alt="GitHub Stats" />
 
