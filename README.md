@@ -129,7 +129,9 @@ src="https://github-readme-activity-graph.vercel.app/graph?username=setiawanws&t
         alt="GitHub Contribution Snake"
         src="https://raw.githubusercontent.com/setiawanws/setiawanws/output/github-contribution-grid-snake.svg" />
 </picture>
+
 ---
+
 ## 🎵 Currently Listening
 
 <p align="center">
