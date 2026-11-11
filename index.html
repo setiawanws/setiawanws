@@ -272,12 +272,37 @@
       }
 
       .skill {
-        padding: 9px 13px;
+        display: inline-flex;
+        min-height: 40px;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
         border: 1px solid var(--line);
-        border-radius: 999px;
+        border-radius: 9px;
         background: rgba(255, 255, 255, 0.035);
         color: #d9deeb;
         font-size: 0.86rem;
+        text-decoration: none;
+        transition:
+          border-color 160ms ease,
+          background 160ms ease,
+          color 160ms ease,
+          transform 160ms ease;
+      }
+
+      .skill:hover,
+      .skill:focus-visible {
+        transform: translateY(-2px);
+        border-color: rgba(102, 227, 238, 0.5);
+        background: rgba(102, 227, 238, 0.09);
+        color: #e7fbff;
+      }
+
+      .skill img {
+        width: 18px;
+        height: 18px;
+        flex: 0 0 18px;
+        object-fit: contain;
       }
 
       .contact {
@@ -504,7 +529,7 @@
           <a href="#projects">Proyek</a>
           <a href="portofolio.html">Portofolio</a>
           <a href="#skills">Keahlian</a>
-          <a href="#activity">Aktivitas</a>
+          <a href="#activity">Github Streak</a>
           <a href="#contact">Kontak</a>
         </nav>
       </div>
@@ -596,6 +621,16 @@
                 application for managing company assets and stock.</em>
               </p>
             </article>
+            <article class="card">
+              <h3>🛠 IT Asset Management</h3>
+              <span class="year">2014 — 2017</span>
+              <p>
+                Memulai karier di bidang IT sebagai freelance IT Support, menangani
+                kebutuhan teknis di beberapa perusahaan dan memastikan perangkat IT
+                berjalan optimal melalui pemeliharaan, perbaikan, serta
+                troubleshooting.
+              </p>
+              </article>
           </div>
         </section>
 
@@ -604,34 +639,52 @@
           <div class="tech-category">
             <h3>🎨 Frontend</h3>
             <div class="skills" aria-label="Teknologi frontend">
-              <span class="skill">HTML</span><span class="skill">CSS</span>
-              <span class="skill">JavaScript</span><span class="skill">jQuery</span>
-              <span class="skill">React</span><span class="skill">Vue</span>
-              <span class="skill">Vuetify</span><span class="skill">Bootstrap</span>
+              <a class="skill" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/html5/66E3EE" alt="" aria-hidden="true" loading="lazy" />HTML</a>
+              <a class="skill" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/css/66E3EE" alt="" aria-hidden="true" loading="lazy" />CSS</a>
+              <a class="skill" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/javascript/66E3EE" alt="" aria-hidden="true" loading="lazy" />JavaScript</a>
+              <a class="skill" href="https://jquery.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/jquery/66E3EE" alt="" aria-hidden="true" loading="lazy" />jQuery</a>
+              <a class="skill" href="https://react.dev/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/react/66E3EE" alt="" aria-hidden="true" loading="lazy" />React</a>
+              <a class="skill" href="https://vuejs.org/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/vuedotjs/66E3EE" alt="" aria-hidden="true" loading="lazy" />Vue</a>
+              <a class="skill" href="https://vuetifyjs.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/vuetify/66E3EE" alt="" aria-hidden="true" loading="lazy" />Vuetify</a>
+              <a class="skill" href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/bootstrap/66E3EE" alt="" aria-hidden="true" loading="lazy" />Bootstrap</a>
             </div>
           </div>
           <div class="tech-category">
             <h3>⚙️ Backend</h3>
             <div class="skills" aria-label="Teknologi backend">
-              <span class="skill">CodeIgniter</span><span class="skill">Laravel</span>
-              <span class="skill">PHP</span><span class="skill">MySQL</span>
-              <span class="skill">PostgreSQL</span>
+              <a class="skill" href="https://codeigniter.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/codeigniter/66E3EE" alt="" aria-hidden="true" loading="lazy" />CodeIgniter</a>
+              <a class="skill" href="https://laravel.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/laravel/66E3EE" alt="" aria-hidden="true" loading="lazy" />Laravel</a>
+              <a class="skill" href="https://www.php.net/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/php/66E3EE" alt="" aria-hidden="true" loading="lazy" />PHP</a>
+              <a class="skill" href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/mysql/66E3EE" alt="" aria-hidden="true" loading="lazy" />MySQL</a>
+              <a class="skill" href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/postgresql/66E3EE" alt="" aria-hidden="true" loading="lazy" />PostgreSQL</a>
             </div>
           </div>
           <div class="tech-category">
             <h3>🛠 Tools</h3>
             <div class="skills" aria-label="Tools">
-              <span class="skill">Docker</span><span class="skill">Git</span>
-              <span class="skill">GitHub</span><span class="skill">Sublime</span>
-              <span class="skill">VS Code</span><span class="skill">Postman</span>
-              <span class="skill">Nginx</span>
+              <a class="skill" href="https://www.docker.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/docker/66E3EE" alt="" aria-hidden="true" loading="lazy" />Docker</a>
+              <a class="skill" href="https://git-scm.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/git/66E3EE" alt="" aria-hidden="true" loading="lazy" />Git</a>
+              <a class="skill" href="https://github.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/github/66E3EE" alt="" aria-hidden="true" loading="lazy" />GitHub</a>
+              <a class="skill" href="https://www.sublimetext.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/sublimetext/66E3EE" alt="" aria-hidden="true" loading="lazy" />Sublime</a>
+              <a class="skill" href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="" aria-hidden="true" loading="lazy" />VS Code</a>
+              <a class="skill" href="https://www.postman.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/postman/66E3EE" alt="" aria-hidden="true" loading="lazy" />Postman</a>
+              <a class="skill" href="https://nginx.org/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/nginx/66E3EE" alt="" aria-hidden="true" loading="lazy" />Nginx</a>
             </div>
           </div>
           <div class="tech-category">
             <h3>🎯 Other</h3>
             <div class="skills" aria-label="Lainnya">
-              <span class="skill">Stack Overflow</span><span class="skill">Windows</span>
-              <span class="skill">Ubuntu</span><span class="skill">Apple</span>
+              <a class="skill" href="https://stackoverflow.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/stackoverflow/66E3EE" alt="" aria-hidden="true" loading="lazy" />Stack Overflow</a>
+              <a class="skill" href="https://www.microsoft.com/windows/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg" alt="" aria-hidden="true" loading="lazy" />Windows</a>
+              <a class="skill" href="https://ubuntu.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/ubuntu/66E3EE" alt="" aria-hidden="true" loading="lazy" />Ubuntu</a>
+              <a class="skill" href="https://www.apple.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/apple/66E3EE" alt="" aria-hidden="true" loading="lazy" />Apple</a>
+            </div>
+          </div>
+          <div class="tech-category">
+            <h3>🧠 AI</h3>
+            <div class="skills" aria-label="AI">
+              <a class="skill" href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/githubcopilot/66E3EE" alt="" aria-hidden="true" loading="lazy" />Copilot</a>
+              <a class="skill" href="https://antigravity.google/" target="_blank" rel="noopener noreferrer"><img src="assets/antigravity-icon.svg" alt="" aria-hidden="true" loading="lazy" />Antigravity</a>
             </div>
           </div>
         </section>

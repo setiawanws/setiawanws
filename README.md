@@ -84,6 +84,11 @@
 <img src="https://skillicons.dev/icons?i=stackoverflow,windows,ubuntu,apple"/>
 </p>
 
+### 🧠 AI
+<p>
+<img src="https://skillicons.dev/icons?i=copilot,antigravity"/>
+</p>
+
 <!-- DIVIDER -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
@@ -147,5 +152,3 @@ src="https://github-readme-activity-graph.vercel.app/graph?username=setiawanws&t
 
 
 <img src="https://capsule-render.vercel.app/api?type=waving&width=100%&height=120&color=gradient&customColorList=6,11,20&text=%C2%A9%202015%20-%202026%20Eko%20Setiawan%20%7C%20All%20Rights%20Reserved&fontAlignY=68&fontSize=12&descAlignY=88&descSize=12&section=footer"/>
-
-
