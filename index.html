@@ -11,6 +11,7 @@
     <title>Eko Setiawan — Fullstack Developer</title>
     <!-- header -->
     <script src="header.js" defer></script>
+    <script src="footer.js" defer></script>
     <style>
       :root {
         color-scheme: dark;
@@ -388,16 +389,6 @@
         font-size: 0.88rem;
       }
 
-      footer {
-        width: 100%;
-      }
-
-      footer img {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-
       @media (max-width: 680px) {
         .page {
           width: min(100% - 32px, 520px);
@@ -666,13 +657,7 @@
         </section>
       </main>
 
-      <footer>
-        <img
-          src="https://capsule-render.vercel.app/api?type=waving&amp;width=100%25&amp;height=120&amp;color=gradient&amp;customColorList=6,11,20&amp;text=%C2%A9%202015%20-%202026%20Eko%20Setiawan%20%7C%20All%20Rights%20Reserved&amp;fontAlignY=68&amp;fontSize=12&amp;descAlignY=88&amp;descSize=12&amp;section=footer"
-          alt="© 2015 - 2026 Eko Setiawan | All Rights Reserved"
-          loading="lazy"
-        />
-      </footer>
+      <div data-footer-mount></div>
     </div>
   </body>
 </html>
