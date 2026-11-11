@@ -739,13 +739,13 @@
       <section class="document-section" aria-labelledby="document-title">
         <h2 class="document-heading" id="document-title">Download Portofolio Lengkap</h2>
         <p class="document-copy">
-          Berikut isi portofolio yang disusun menjadi konten halaman. PDF asli
+          Berikut isi portofolio yang disusun menjadi konten halaman, PDF asli
           tetap tersedia di bagian bawah untuk melihat seluruh gambar dan halaman
           proyek seperti dokumen sumber.
         </p>
         <div class="document-actions">
           <button class="document-link" id="open-download-dialog" type="button">
-            Unduh Portofolio
+            Download Portofolio
           </button>
         </div>
         <dialog class="download-dialog" id="download-dialog" aria-labelledby="download-form-title">
@@ -763,14 +763,13 @@
                 action="https://formsubmit.co/ajax/setiawanws.me@gmail.com"
                 method="POST"
               >
-                <!-- <input type="hidden" name="_subject" value="Permintaan unduh portofolio" /> -->
                 <input id="download-time" type="hidden" name="_subject" />
 
                 
                 <div>
-                  <h3 id="download-form-title">Formulir permintaan unduh</h3>
+                  <h3 id="download-form-title">Formulir permintaan download</h3>
                   <p class="download-form-intro">
-                    Isi data berikut untuk membuka tautan unduhan portofolio.
+                    Isi data berikut untuk membuka tautan download portofolio.
                   </p>
                 </div>
                 <div class="download-form-row">
@@ -791,7 +790,7 @@
                 
 
                   <button class="document-link" id="download-form-submit" type="submit">
-                    Unduh PDF
+                    Download Portofolio
                   </button>
                 <!-- pesan error -->
                 <p class="download-form-status" id="download-form-status" role="status" aria-live="polite"></p>
@@ -799,12 +798,12 @@
               </form>
               
               <div class="download-form-result" id="download-form-result" hidden>
-                <p>Saya menerima permintaan. Anda sekarang dapat mengunduh PDF.</p>
+                <p>Saya menerima permintaan. Anda sekarang dapat Download PDF.</p>
                 <a
                   class="document-link"
                   href="assets/Portofolio_Eko-hery-setiawan_compressed.pdf"
                   download
-                >Unduh PDF</a>
+                >Download PDF</a>
               </div>
 
             </div>
@@ -1063,7 +1062,7 @@
           timeStyle: "long",
           timeZone: "Asia/Jakarta",
         }).format(now);
-        downloadTime.value = `Permintaan unduh portofolio - ${date} - ${time}`;
+        downloadTime.value = `Permintaan download portofolio - ${date} - ${time}`;
         // downloadTimeUtc.value = now.toISOString();
       };
 
