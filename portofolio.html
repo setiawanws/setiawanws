@@ -382,10 +382,81 @@
       }
 
       .document-chapter {
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
         padding: 24px;
         border: 1px solid var(--line);
         border-radius: 14px;
-        background: linear-gradient(140deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.018));
+        background: #10172a;
+      }
+
+      .document-chapter > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .document-chapter::before {
+        position: absolute;
+        z-index: 0;
+        inset: -55%;
+        border-radius: 40%;
+        content: "";
+        opacity: 0.28;
+        pointer-events: none;
+      }
+
+      .chapter-support::before {
+        background:
+          repeating-linear-gradient(135deg, transparent 0 34px, rgba(102, 227, 238, 0.12) 35px 36px, transparent 37px 70px),
+          radial-gradient(ellipse at 30% 45%, rgba(32, 190, 205, 0.52), transparent 55%);
+        animation: support-glow 18s linear infinite;
+      }
+
+      .chapter-bpkh::before {
+        background:
+          radial-gradient(ellipse at 68% 32%, rgba(156, 140, 255, 0.58), transparent 48%),
+          radial-gradient(ellipse at 25% 80%, rgba(90, 75, 190, 0.38), transparent 46%);
+        animation: bpkh-drift 14s ease-in-out infinite alternate;
+      }
+
+      .chapter-monitoring::before {
+        background:
+          repeating-radial-gradient(ellipse at 75% 40%, transparent 0 30px, rgba(102, 227, 238, 0.15) 31px 32px, transparent 33px 56px),
+          radial-gradient(ellipse at 75% 40%, rgba(30, 180, 195, 0.42), transparent 54%);
+        animation: monitoring-pulse 9s ease-in-out infinite;
+      }
+
+      .chapter-inventory::before {
+        background:
+          repeating-linear-gradient(0deg, transparent 0 25px, rgba(156, 140, 255, 0.11) 26px 27px, transparent 28px 54px),
+          linear-gradient(110deg, transparent 30%, rgba(156, 140, 255, 0.32), transparent 70%);
+        animation: inventory-flow 12s ease-in-out infinite alternate;
+      }
+
+      @keyframes support-glow {
+        to { transform: rotate(360deg); }
+      }
+
+      @keyframes bpkh-drift {
+        from { transform: translate(-5%, 3%) scale(0.94); }
+        to { transform: translate(6%, -4%) scale(1.08); }
+      }
+
+      @keyframes monitoring-pulse {
+        0%, 100% { transform: scale(0.9); opacity: 0.18; }
+        50% { transform: scale(1.08); opacity: 0.36; }
+      }
+
+      @keyframes inventory-flow {
+        from { transform: translateX(-8%) skewY(-5deg); }
+        to { transform: translateX(8%) skewY(5deg); }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .document-chapter::before {
+          animation: none;
+        }
       }
 
       .document-chapter h3 {
@@ -619,18 +690,7 @@
                   </p>
                 </div>
                 <div class="download-form-row">
-                  <!-- <div class="download-form-field">
-                    <label for="download-name">Nama lengkap</label>
-                    <input
-                      id="download-name"
-                      type="text"
-                      name="name"
-                      placeholder="Nama Anda"
-                      autocomplete="name"
-                      maxlength="120"
-                      required
-                    />
-                  </div> -->
+               
                   <div class="download-form-field">
                     <label for="download-email">Alamat email</label>
                     <input
@@ -644,19 +704,7 @@
                     />
                   </div>
                 </div>
-                <!-- <div class="download-form-field">
-                  <label for="download-message">Pesan</label>
-                  <textarea
-                    id="download-message"
-                    name="message"
-                    rows="4"
-                    placeholder="Tuliskan pesan atau keperluan Anda."
-                    maxlength="2000"
-                    required
-                  ></textarea>
-                </div> -->
-                  <!-- <input id="download-time" type="hidden" name="waktu_unduh" /> -->
-                  <!-- <input id="download-time-utc" type="hidden" name="waktu_unduh_utc" /> -->
+                
 
                   <button class="document-link" id="download-form-submit" type="submit">
                     Unduh PDF
@@ -681,7 +729,7 @@
 
         <div class="document-content">
 
-          <article class="document-chapter">
+          <article class="document-chapter chapter-support">
             <h3>IT Support</h3>
             <span class="document-period">2014 — 2017</span>
             <p>
@@ -704,33 +752,43 @@
             </p>
           </article>
 
-          <article class="document-chapter">
+          <article class="document-chapter chapter-bpkh">
             <h3>Aplikasi BPKH</h3>
-            <span class="document-period">2020 — 2021 · PT. Prospero</span>
+            <span class="document-period">2020 — 2021</span>
             <p>
               Pembuatan aplikasi untuk kebutuhan BPKH. Halaman yang ditampilkan
               dalam dokumen meliputi halaman login, dashboard, dan master data.
             </p>
+            <p>
+              <strong>Perusahaan:</strong> PT.Prospero
+            </p>
           </article>
 
-          <article class="document-chapter">
+          <article class="document-chapter chapter-monitoring">
             <h3>Data Center Monitoring (DCOSS)</h3>
-            <span class="document-period">2021 — 2022 · PT. Sukses Teknologi</span>
+            <span class="document-period">2021 — 2022</span>
             <p>
               Aplikasi pemantauan untuk Balai Kota DKI Jakarta. Dokumen menampilkan
               dashboard pemantauan serta grafik tren suhu pada infrastruktur data
               center.
             </p>
+            <p>
+              <strong>Perusahaan:</strong> PT. Sukses Teknologi
+            </p>
+            
           </article>
 
-          <article class="document-chapter">
+          <article class="document-chapter chapter-inventory">
             <h3>IT Inventory — PLB, GB, dan E-INKABER</h3>
-            <span class="document-period">2022 — 2026 · PT. EDI Indonesia</span>
+            <span class="document-period">2022 — 2026</span>
             <p>
               Pengembangan tiga aplikasi persediaan untuk mendukung proses bisnis
               kepabeanan: PLB (Pusat Logistik Berikat), GB (Gudang Berikat), dan
               E-INKABER. Dokumen memperlihatkan alur proses dan pemasukan barang
               sesuai kebutuhan masing-masing aplikasi.
+            </p>
+            <p>
+              <strong>Perusahaan:</strong> PT. EDI Indonesia
             </p>
           </article>
           
