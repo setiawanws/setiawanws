@@ -211,121 +211,9 @@
         text-decoration: none;
       }
 
-      button.document-link {
-        font-family: inherit;
-        cursor: pointer;
-      }
-
       .document-link:hover,
       .document-link:focus-visible {
         background: rgba(102, 227, 238, 0.16);
-      }
-
-      .email-dialog {
-        width: min(460px, calc(100% - 32px));
-        max-width: none;
-        padding: 26px;
-        border: 1px solid rgba(156, 140, 255, 0.32);
-        border-radius: 16px;
-        background: #11182b;
-        color: #e7eaf3;
-        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.48);
-      }
-
-      .email-dialog::backdrop {
-        background: rgba(4, 7, 16, 0.74);
-        -webkit-backdrop-filter: blur(5px);
-        backdrop-filter: blur(5px);
-      }
-
-      .email-dialog h3 {
-        margin: 0;
-        font-size: 1.25rem;
-      }
-
-      .email-dialog-copy,
-      .email-privacy,
-      .email-status {
-        color: var(--muted);
-        font-size: 0.88rem;
-        line-height: 1.65;
-      }
-
-      .email-dialog-copy {
-        margin: 10px 0 18px;
-      }
-
-      .email-field-label {
-        display: block;
-        margin-bottom: 7px;
-        font-size: 0.88rem;
-        font-weight: 650;
-      }
-
-      .email-field {
-        width: 100%;
-        min-height: 44px;
-        padding: 0 12px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: #0b1020;
-        color: #e7eaf3;
-        font: inherit;
-      }
-
-      .email-field:focus-visible {
-        outline: 2px solid var(--cyan);
-        outline-offset: 2px;
-      }
-
-      .email-consent {
-        display: flex;
-        align-items: flex-start;
-        gap: 10px;
-        margin-top: 16px;
-        color: var(--muted);
-        font-size: 0.82rem;
-        line-height: 1.55;
-      }
-
-      .email-consent input {
-        margin-top: 3px;
-        accent-color: var(--cyan);
-      }
-
-      .email-privacy {
-        margin: 12px 0 0;
-        font-size: 0.78rem;
-      }
-
-      .email-dialog-actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 20px;
-      }
-
-      .email-status {
-        min-height: 1.5em;
-        margin: 14px 0 0;
-      }
-
-      .email-status[data-state="error"] {
-        color: #ff9aab;
-      }
-
-      .email-status[data-state="success"] {
-        color: #8de8b0;
-      }
-
-      .email-honeypot {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        clip-path: inset(50%);
       }
 
       .document-viewer {
@@ -548,73 +436,13 @@
           proyek seperti dokumen sumber.
         </p>
         <div class="document-actions">
-          <button class="document-link" id="request-download-trigger" type="button">
-            Unduh PDF
-          </button>
+          
+          <a
+            class="document-link"
+            href="assets/Portofolio_Eko-hery-setiawan_compressed.pdf"
+            download
+          >Unduh PDF</a>
         </div>
-
-        <dialog class="email-dialog" id="email-request-dialog" aria-labelledby="email-dialog-title">
-          <h3 id="email-dialog-title">Sebelum mengunduh</h3>
-          <p class="email-dialog-copy">
-            Masukkan email Anda. Permintaan unduhan akan dikirim ke
-            setiawanws.me@gmail.com.
-          </p>
-          <form id="email-request-form">
-            <input type="hidden" name="_subject" value="Permintaan unduh portofolio" />
-            <input
-              type="hidden"
-              name="message"
-              value="Pengunjung meminta mengunduh Portofolio_Eko-hery-setiawan_compressed.pdf."
-            />
-            <div class="email-honeypot" aria-hidden="true">
-              <label for="email-website">Leave this field empty</label>
-              <input id="email-website" name="_honey" tabindex="-1" autocomplete="off" />
-            </div>
-            <label class="email-field-label" for="visitor-email">Email Anda</label>
-            <input
-              class="email-field"
-              id="visitor-email"
-              name="email"
-              type="email"
-              autocomplete="email"
-              placeholder="nama@email.com"
-              required
-            />
-            <label class="email-consent">
-              <input name="consent" type="checkbox" value="yes" required />
-              <span>
-                Saya setuju alamat email dikirim melalui FormSubmit dan diteruskan
-                kepada pemilik situs untuk permintaan unduhan ini.
-              </span>
-            </label>
-            <p class="email-privacy">
-              FormSubmit adalah layanan pihak ketiga dan menyimpan kiriman selama
-              30 hari. Pengiriman pertama memerlukan aktivasi email penerima.
-            </p>
-            <div class="email-dialog-actions">
-              <button class="document-link" id="submit-email-request" type="submit">
-                Kirim permintaan
-              </button>
-              <button class="document-link" id="close-email-dialog" type="button">
-                Batal
-              </button>
-            </div>
-            <p class="email-status" id="email-request-status" role="status" aria-live="polite"></p>
-          </form>
-          <div id="email-request-success" hidden>
-            <p class="email-status" data-state="success" role="status">
-              Permintaan diterima FormSubmit, tetapi ini belum memastikan email sudah masuk.
-              Jika ini pengiriman pertama, pemilik situs harus mengaktifkan alamat penerima
-              melalui email dari FormSubmit. Setelah aktivasi, kirim ulang permintaan bila
-              email sebelumnya belum diteruskan.
-            </p>
-            <a
-              class="document-link"
-              href="assets/Portofolio_Eko-hery-setiawan_compressed.pdf"
-              download
-            >Unduh PDF</a>
-          </div>
-        </dialog>
 
         <div class="document-content">
 
@@ -672,72 +500,11 @@
           </article>
           
         </div>
+
         
       </section>
     </main>
 
     <footer>© 2015–2026 Eko Setiawan | All Rights Reserved</footer>
-    <script>
-      const emailDialog = document.querySelector("#email-request-dialog");
-      const emailForm = document.querySelector("#email-request-form");
-      const emailStatus = document.querySelector("#email-request-status");
-      const emailSuccess = document.querySelector("#email-request-success");
-      const emailSubmitButton = document.querySelector("#submit-email-request");
-      const downloadTrigger = document.querySelector("#request-download-trigger");
-      let requestAccepted = false;
-
-      downloadTrigger.addEventListener("click", () => {
-        if (requestAccepted) {
-          emailSuccess.hidden = false;
-        } else {
-          emailForm.hidden = false;
-          emailSuccess.hidden = true;
-        }
-        emailStatus.textContent = "";
-        emailStatus.removeAttribute("data-state");
-        emailDialog.showModal();
-      });
-
-      document.querySelector("#close-email-dialog").addEventListener("click", () => {
-        emailDialog.close();
-      });
-
-      emailForm.addEventListener("submit", async (event) => {
-        event.preventDefault();
-        if (!emailForm.reportValidity()) return;
-
-        emailSubmitButton.disabled = true;
-        emailStatus.textContent = "Mengirim permintaan...";
-        emailStatus.removeAttribute("data-state");
-
-        try {
-          const response = await fetch("https://formsubmit.co/ajax/setiawanws.me@gmail.com", {
-            method: "POST",
-            headers: {
-              Accept: "application/json",
-              "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
-            },
-            body: new URLSearchParams(new FormData(emailForm)),
-          });
-          const result = await response.json();
-
-          if (!response.ok || result.success !== true && result.success !== "true") {
-            throw new Error(result.message || "Layanan email tidak dapat menerima permintaan.");
-          }
-
-          requestAccepted = true;
-          emailForm.hidden = true;
-          emailSuccess.hidden = false;
-        } catch (error) {
-          emailStatus.dataset.state = "error";
-          emailStatus.textContent =
-            error instanceof Error
-              ? `${error.message} Periksa koneksi internet dan coba lagi.`
-              : "Permintaan gagal dikirim. Periksa koneksi internet dan coba lagi.";
-        } finally {
-          emailSubmitButton.disabled = false;
-        }
-      });
-    </script>
   </body>
 </html>
