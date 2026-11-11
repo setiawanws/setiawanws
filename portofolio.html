@@ -753,10 +753,15 @@
 
       const updateDownloadTime = () => {
         const now = new Date();
-        downloadTime.value = new Intl.DateTimeFormat("id-ID", {
+        const date = new Intl.DateTimeFormat("id-ID", {
           dateStyle: "full",
-          timeStyle: "long",
+          timeZone: "Asia/Jakarta",
         }).format(now);
+        const time = new Intl.DateTimeFormat("id-ID", {
+          timeStyle: "long",
+          timeZone: "Asia/Jakarta",
+        }).format(now);
+        downloadTime.value = `Permintaan unduh portofolio - ${date} - ${time}`;
         // downloadTimeUtc.value = now.toISOString();
       };
 
