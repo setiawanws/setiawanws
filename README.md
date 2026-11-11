@@ -85,8 +85,10 @@
 </p>
 
 ### 🧠 AI
+
 <p>
-<img src="https://skillicons.dev/icons?i=copilot,antigravity"/>
+  <a href="https://github.com/features/copilot"><img src="https://cdn.simpleicons.org/githubcopilot/66E3EE" width="48" height="48" alt="GitHub Copilot"/></a>
+  <a href="https://antigravity.google/"><img src="./assets/antigravity-icon.svg" width="48" height="48" alt="Google Antigravity"/></a>
 </p>
 
 <!-- DIVIDER -->
