@@ -43,53 +43,13 @@
       }
 
       .profile-banner {
-        position: relative;
-        display: grid;
-        min-height: 205px;
-        place-content: center;
-        overflow: hidden;
         margin-top: 20px;
-        border: 1px solid rgba(156, 140, 255, 0.22);
-        border-radius: 16px;
-        background:
-          radial-gradient(ellipse at 50% 20%, rgba(103, 226, 238, 0.22), transparent 46%),
-          linear-gradient(120deg, #17264a, #34235f 55%, #17264a);
-        text-align: center;
       }
 
-      .profile-banner::before,
-      .profile-banner::after {
-        position: absolute;
-        right: -5%;
-        bottom: -96px;
-        left: -5%;
-        height: 150px;
-        border-radius: 50% 50% 0 0;
-        background: rgba(11, 16, 32, 0.42);
-        content: "";
-        transform: rotate(-3deg);
-      }
-
-      .profile-banner::after {
-        bottom: -116px;
-        background: rgba(11, 16, 32, 0.52);
-        transform: rotate(4deg);
-      }
-
-      .profile-banner h1 {
-        position: relative;
-        z-index: 1;
-        margin: 0;
-        font-size: clamp(2.2rem, 6vw, 3.2rem);
-        letter-spacing: -0.045em;
-      }
-
-      .profile-banner p {
-        position: relative;
-        z-index: 1;
-        margin: 10px 0 0;
-        color: #d7d9f4;
-        font-size: 0.95rem;
+      .profile-banner img {
+        display: block;
+        width: 100%;
+        height: auto;
       }
 
       a {
@@ -102,11 +62,24 @@
       }
 
       .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+        min-height: 76px;
+        background: rgba(11, 16, 32, 0.58);
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .topbar-inner {
         display: flex;
+        width: min(1060px, calc(100% - 40px));
+        min-height: inherit;
         align-items: center;
         justify-content: space-between;
-        min-height: 76px;
-        border-bottom: 1px solid var(--line);
+        margin-inline: auto;
       }
 
       .brand {
@@ -232,6 +205,14 @@
         letter-spacing: -0.08em;
       }
 
+      .monogram img {
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        object-fit: cover;
+        object-position: center 34%;
+      }
+
       section {
         padding-block: 40px 58px;
         border-top: 1px solid var(--line);
@@ -355,6 +336,18 @@
         background: linear-gradient(140deg, rgba(42, 54, 91, 0.55), rgba(17, 24, 45, 0.75));
       }
 
+      .stat-card img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 14px;
+        border-radius: 7px;
+      }
+
+      .stat-card.wide {
+        grid-column: 1 / -1;
+      }
+
       .stat-card strong {
         display: block;
         color: #c9c4ff;
@@ -448,10 +441,14 @@
         }
 
         .topbar {
+          min-height: 66px;
+        }
+
+        .topbar-inner {
+          width: min(100% - 32px, 520px);
           align-items: flex-start;
           flex-direction: column;
           gap: 12px;
-          min-height: 66px;
           padding-block: 14px;
         }
 
@@ -497,8 +494,8 @@
     </style>
   </head>
   <body>
-    <div class="page">
-      <header class="topbar">
+    <header class="topbar">
+      <div class="topbar-inner">
         <a class="brand" href="#" aria-label="Eko Setiawan, beranda">Eko Setiawan<span>.</span></a>
         <nav aria-label="Navigasi utama">
           <a href="#about">Tentang</a>
@@ -507,12 +504,17 @@
           <a href="#activity">Aktivitas</a>
           <a href="#contact">Kontak</a>
         </nav>
-      </header>
+      </div>
+    </header>
 
+    <div class="page">
       <main>
-        <div class="profile-banner" role="img" aria-label="Eko Setiawan, Fullstack Developer, Laravel Developer, Backend Developer">
-          <h1>Eko Setiawan</h1>
-          <p>Fullstack Developer&nbsp; | &nbsp;Laravel Developer&nbsp; | &nbsp;Backend Developer</p>
+        <div class="profile-banner">
+          <img
+            src="https://capsule-render.vercel.app/api?type=waving&amp;height=180&amp;color=gradient&amp;customColorList=6,11,20&amp;text=Eko%20Setiawan&amp;fontAlignY=35&amp;fontSize=42&amp;fontColor=ffffff&amp;desc=Fullstack%20Developer%20%7C%20Laravel%20Developer%20%7C%20Backend%20Developer&amp;descAlignY=55"
+            alt="Eko Setiawan — Fullstack Developer | Laravel Developer | Backend Developer"
+            width="100%"
+          />
         </div>
 
         <section class="hero" aria-labelledby="hero-title">
@@ -532,7 +534,9 @@
               <a class="button secondary" href="#projects">Lihat proyek</a>
             </div>
           </div>
-          <div class="monogram" aria-hidden="true">ES</div>
+          <div class="monogram">
+            <img src="assets/profil.jpg" alt="Foto profil Eko Setiawan" />
+          </div>
         </section>
 
         <section id="about" aria-labelledby="about-title">
@@ -634,22 +638,46 @@
           <div class="stats-grid">
             <article class="stat-card">
               <strong>Most Commit Language</strong>
-              <p>Ringkasan bahasa commit ditampilkan di profil GitHub.</p>
+              <img
+                src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=setiawanws&amp;theme=tokyonight"
+                alt="Most commit language untuk setiawanws"
+                loading="lazy"
+              />
             </article>
             <article class="stat-card">
               <strong>Repositories per Language</strong>
-              <p>Distribusi bahasa repositori ditampilkan di profil GitHub.</p>
+              <img
+                src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=setiawanws&amp;theme=tokyonight"
+                alt="Bahasa berdasarkan repositori setiawanws"
+                loading="lazy"
+              />
             </article>
             <article class="stat-card">
               <strong>Top Languages</strong>
-              <p>Lihat bahasa pemrograman teratas pada profil GitHub.</p>
+              <img
+                src="https://github-readme-mwendwa.vercel.app/api/top-langs/?username=setiawanws&amp;layout=compact&amp;count_private=true&amp;theme=tokyonight"
+                alt="Bahasa pemrograman teratas setiawanws"
+                loading="lazy"
+              />
             </article>
             <article class="stat-card">
               <strong>GitHub Stats</strong>
-              <p>Statistik akun lengkap tersedia di profil GitHub.</p>
+              <img
+                src="https://github-readme-mwendwa.vercel.app/api?username=setiawanws&amp;show_icons=true&amp;count_private=true&amp;line_height=20&amp;theme=tokyonight"
+                alt="Statistik GitHub setiawanws"
+                loading="lazy"
+              />
+            </article>
+            <article class="stat-card wide">
+              <strong>Profile Summary</strong>
+              <img
+                src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=setiawanws&amp;theme=tokyonight"
+                alt="Ringkasan profil GitHub setiawanws"
+                loading="lazy"
+              />
             </article>
           </div>
-          <p class="offline-note">Widget statistik eksternal tidak dimuat agar halaman tetap berfungsi tanpa koneksi internet.</p>
+          <p class="offline-note">Kartu statistik dimuat dari layanan eksternal dan memerlukan koneksi internet.</p>
         </section>
 
         <section id="activity" aria-labelledby="activity-title">
