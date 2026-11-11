@@ -3,15 +3,15 @@
 <p align="center">
 
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=gradient&customColorList=6,11,20&text=Eko%20Setiawan&fontAlignY=35&fontSize=42&fontColor=ffffff&desc=Web%20Developer%20%7C%20Laravel%20Developer%20%7C%20Backend%20Developer&descAlignY=55" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=gradient&customColorList=6,11,20&text=Eko%20Setiawan&fontAlignY=35&fontSize=42&fontColor=ffffff&desc=Fullstack%20Developer%20%7C%20Laravel%20Developer%20%7C%20Backend%20Developer&descAlignY=55" width="100%" />
 
 # 👨‍💻 About Me
 <!-- ```yaml 
 ``` -->
->Saya merupakan lulusan Universitas Bina Nusantara (BINUS University) dengan pengalaman lebih dari 11 tahun di bidang Teknologi Informasi (IT). Saya memiliki komitmen tinggi dalam menghasilkan pekerjaan yang berkualitas, mampu bekerja secara mandiri maupun dalam tim, serta memiliki semangat untuk terus belajar, mengembangkan kemampuan, dan memberikan kontribusi yang positif bagi setiap organisasi tempat saya berkarya.
+> Profesional di bidang Teknologi Informasi (IT) dengan pengalaman lebih dari 11 tahun dan lulusan Universitas Bina Nusantara (BINUS University). Berpengalaman dalam mengembangkan solusi teknologi, menyelesaikan permasalahan secara efektif, serta mendukung peningkatan kinerja organisasi melalui penerapan teknologi yang tepat. Memiliki kemampuan bekerja secara mandiri maupun kolaboratif, cepat beradaptasi dengan perubahan, dan berorientasi pada hasil. Saya percaya bahwa pembelajaran berkelanjutan merupakan kunci untuk menghadapi perkembangan teknologi, sehingga saya senantiasa meningkatkan kompetensi profesional dan memberikan kontribusi terbaik dalam setiap proyek maupun organisasi yang saya dukungi.
 
 ---
-> *A graduate of BINUS University (Bina Nusantara University), I have more than 11 years of experience in the Information Technology (IT) industry. Throughout my career, I have demonstrated a strong work ethic, adaptability, and the ability to perform effectively both independently and as part of a team. I am committed to continuous learning, professional development, and delivering positive contributions that support organizational success.*
+>*Information Technology (IT) professional with over 11 years of experience and a graduate of BINUS University (Bina Nusantara University). Experienced in developing technology solutions, solving complex technical challenges, and enhancing organizational performance through the effective implementation of technology. Skilled at working both independently and collaboratively, with strong adaptability to changing environments and a results-oriented mindset. Committed to continuous learning and professional development to keep pace with evolving technologies, while consistently delivering high-quality contributions to every project and organization.*
 
 
 
@@ -89,16 +89,20 @@
 
 # 🔥 GitHub Streak
 
-<p align="center">
+<p width='100%' >
+<img  align='left' src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=setiawanws&theme=tokyonight"/>
 
-<img
-src="https://streak-stats.demolab.com?user=setiawanws&theme=tokyonight&hide_border=true"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=setiawanws&theme=tokyonight"/>
+</p>
+
+<p width='100%'>
+<img align='left' src="https://github-readme-mwendwa.vercel.app/api/top-langs/?username=setiawanws&layout=compact&count_private=true&theme=tokyonight" alt="Top Languages" />
 
 <img src="https://github-readme-mwendwa.vercel.app/api?username=setiawanws&show_icons=true&count_private=true&line_height=20&theme=tokyonight" alt="GitHub Stats" />
 
-<img src="https://github-readme-mwendwa.vercel.app/api/top-langs/?username=setiawanws&layout=compact&count_private=true&theme=tokyonight" alt="Top Languages" />
-
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=setiawanws&theme=tokyonight"/>
 </p>
+
 <!-- DIVIDER -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
@@ -106,7 +110,6 @@ src="https://streak-stats.demolab.com?user=setiawanws&theme=tokyonight&hide_bord
 <p align="center">
 <img width="100%"
 src="https://github-readme-activity-graph.vercel.app/graph?username=setiawanws&theme=tokyo-night&hide_border=true"/>
-
 </p>
 
 <picture>
@@ -114,6 +117,7 @@ src="https://github-readme-activity-graph.vercel.app/graph?username=setiawanws&t
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/setiawanws/setiawanws/output-pacman/pacman-contribution-graph.svg">
     <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/setiawanws/setiawanws/output-pacman/pacman-contribution-graph.svg">
 </picture>
+
 <picture>
     <source
         media="(prefers-color-scheme: dark)"
@@ -127,10 +131,8 @@ src="https://github-readme-activity-graph.vercel.app/graph?username=setiawanws&t
 </picture>
 
 ---
+
 ## 🎵 Currently Listening
-
-
-<!-- [![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=31qz7epc5p6sio5hnn6ccae4mbda&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=true&profanity=false&hide_remaster=false&bar_color=16c6e9&bar_color_cover=true)](https://github.com/kittinan/spotify-github-profile) -->
 
 <p align="center">
   <a href="https://github.com/kittinan/spotify-github-profile">
@@ -141,6 +143,7 @@ src="https://github-readme-activity-graph.vercel.app/graph?username=setiawanws&t
     />
   </a>
 </p>
+
 
 
 <img src="https://capsule-render.vercel.app/api?type=waving&width=100%&height=120&color=gradient&customColorList=6,11,20&text=%C2%A9%202015%20-%202026%20Eko%20Setiawan%20%7C%20All%20Rights%20Reserved&fontAlignY=68&fontSize=12&descAlignY=88&descSize=12&section=footer"/>
