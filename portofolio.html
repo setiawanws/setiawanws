@@ -9,6 +9,8 @@
     />
     <meta name="theme-color" content="#0b1020" />
     <title>Portofolio — Eko Setiawan</title>
+    <!-- header -->
+    <script src="header.js" defer></script>
     <style>
       :root {
         color-scheme: dark;
@@ -45,57 +47,6 @@
 
       a {
         color: inherit;
-      }
-
-      .topbar {
-        position: sticky;
-        top: 0;
-        z-index: 10;
-        width: 100%;
-        min-height: 76px;
-        background: rgba(11, 16, 32, 0.58);
-        -webkit-backdrop-filter: blur(20px);
-        backdrop-filter: blur(20px);
-        border-bottom: 1px solid var(--line);
-      }
-
-      .topbar-inner {
-        display: flex;
-        width: min(1060px, calc(100% - 40px));
-        min-height: inherit;
-        align-items: center;
-        justify-content: space-between;
-        margin-inline: auto;
-      }
-
-      .brand {
-        font-size: 0.95rem;
-        font-weight: 750;
-        letter-spacing: 0.02em;
-        text-decoration: none;
-      }
-
-      .brand span {
-        color: var(--cyan);
-      }
-
-      nav {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 22px;
-      }
-
-      nav a {
-        color: var(--muted);
-        font-size: 0.88rem;
-        text-decoration: none;
-        transition: color 160ms ease;
-      }
-
-      nav a:hover,
-      nav a:focus-visible,
-      nav a[aria-current="page"] {
-        color: var(--cyan);
       }
 
       .page {
@@ -696,34 +647,16 @@
       }
 
       footer {
-        padding: 24px 20px 32px;
-        border-top: 1px solid var(--line);
-        color: #8791a8;
-        font-size: 0.82rem;
-        text-align: center;
+        width: 100%;
+      }
+
+      footer img {
+        display: block;
+        width: 100%;
+        height: auto;
       }
 
       @media (max-width: 680px) {
-        .topbar {
-          min-height: 66px;
-        }
-
-        .topbar-inner {
-          width: min(100% - 32px, 520px);
-          align-items: flex-start;
-          flex-direction: column;
-          gap: 12px;
-          padding-block: 14px;
-        }
-
-        nav {
-          gap: 12px;
-        }
-
-        nav a {
-          font-size: 0.78rem;
-        }
-
         .page {
           width: min(100% - 32px, 520px);
         }
@@ -742,30 +675,11 @@
       }
 
       @media (max-width: 390px) {
-        nav {
-          gap: 9px;
-        }
-
-        nav a {
-          font-size: 0.72rem;
-        }
       }
     </style>
   </head>
   <body>
-    <header class="topbar">
-      <div class="topbar-inner">
-        <a class="brand" href="index.html" aria-label="Kembali ke beranda"></a>
-        <nav aria-label="Navigasi utama">
-          <a href="index.html#about">Tentang</a>
-          <a href="index.html#projects">Proyek</a>
-          <a href="portofolio.html" aria-current="page">Portofolio</a>
-          <a href="index.html#skills">Keahlian</a>
-          <a href="index.html#activity">Github Streak</a>
-          <a href="index.html#contact">Kontak</a>
-        </nav>
-      </div>
-    </header>
+    <div data-header-page="portfolio"></div>
 
     <main class="page">
       <section class="intro" aria-labelledby="portfolio-title">
@@ -1137,7 +1051,13 @@
       </section>
     </main>
 
-    <footer>© 2015–2026 Eko Setiawan | All Rights Reserved</footer>
+    <footer>
+      <img
+        src="https://capsule-render.vercel.app/api?type=waving&amp;width=100%25&amp;height=120&amp;color=gradient&amp;customColorList=6,11,20&amp;text=%C2%A9%202015%20-%202026%20Eko%20Setiawan%20%7C%20All%20Rights%20Reserved&amp;fontAlignY=68&amp;fontSize=12&amp;descAlignY=88&amp;descSize=12&amp;section=footer"
+        alt="© 2015 - 2026 Eko Setiawan | All Rights Reserved"
+        loading="lazy"
+      />
+    </footer>
     <script>
       const downloadForm = document.querySelector("#portfolio-download-form");
       const downloadFormStatus = document.querySelector("#download-form-status");

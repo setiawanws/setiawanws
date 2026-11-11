@@ -9,6 +9,8 @@
     />
     <meta name="theme-color" content="#0b1020" />
     <title>Eko Setiawan — Fullstack Developer</title>
+    <!-- header -->
+    <script src="header.js" defer></script>
     <style>
       :root {
         color-scheme: dark;
@@ -59,55 +61,6 @@
       .page {
         width: min(1060px, calc(100% - 40px));
         margin-inline: auto;
-      }
-
-      .topbar {
-        position: sticky;
-        top: 0;
-        z-index: 10;
-        width: 100%;
-        min-height: 76px;
-        background: rgba(11, 16, 32, 0.58);
-        -webkit-backdrop-filter: blur(20px);
-        backdrop-filter: blur(20px);
-        border-bottom: 1px solid var(--line);
-      }
-
-      .topbar-inner {
-        display: flex;
-        width: min(1060px, calc(100% - 40px));
-        min-height: inherit;
-        align-items: center;
-        justify-content: space-between;
-        margin-inline: auto;
-      }
-
-      .brand {
-        font-size: 0.95rem;
-        font-weight: 750;
-        letter-spacing: 0.02em;
-        text-decoration: none;
-      }
-
-      .brand span {
-        color: var(--cyan);
-      }
-
-      nav {
-        display: flex;
-        gap: 26px;
-      }
-
-      nav a {
-        color: var(--muted);
-        font-size: 0.88rem;
-        text-decoration: none;
-        transition: color 160ms ease;
-      }
-
-      nav a:hover,
-      nav a:focus-visible {
-        color: var(--cyan);
       }
 
       .hero {
@@ -436,55 +389,18 @@
       }
 
       footer {
-        position: relative;
-        overflow: hidden;
-        padding-block: 24px 32px;
-        border-top: 1px solid var(--line);
-        color: #8791a8;
-        font-size: 0.82rem;
-        text-align: center;
+        width: 100%;
       }
 
-      footer::before {
-        position: absolute;
-        top: -50px;
-        right: -5%;
-        left: -5%;
-        height: 55px;
-        border-radius: 50%;
-        background: linear-gradient(90deg, rgba(102, 227, 238, 0.22), rgba(156, 140, 255, 0.3));
-        content: "";
-        filter: blur(20px);
-      }
-
-      footer span {
-        position: relative;
+      footer img {
+        display: block;
+        width: 100%;
+        height: auto;
       }
 
       @media (max-width: 680px) {
         .page {
           width: min(100% - 32px, 520px);
-        }
-
-        .topbar {
-          min-height: 66px;
-        }
-
-        .topbar-inner {
-          width: min(100% - 32px, 520px);
-          align-items: flex-start;
-          flex-direction: column;
-          gap: 12px;
-          padding-block: 14px;
-        }
-
-        nav {
-          flex-wrap: wrap;
-          gap: 14px;
-        }
-
-        nav a {
-          font-size: 0.78rem;
         }
 
         .hero {
@@ -509,31 +425,12 @@
       }
 
       @media (max-width: 390px) {
-        nav {
-          gap: 9px;
-        }
-
-        nav a {
-          font-size: 0.72rem;
-        }
       }
     </style>
   </head>
 
   <body>
-    <header class="topbar">
-      <div class="topbar-inner">
-        <a class="brand" href="#" aria-label="Eko Setiawan, beranda"></a>
-        <nav aria-label="Navigasi utama">
-          <a href="#about">Tentang</a>
-          <a href="#projects">Proyek</a>
-          <a href="portofolio.html">Portofolio</a>
-          <a href="#skills">Keahlian</a>
-          <a href="#activity">Github Streak</a>
-          <a href="#contact">Kontak</a>
-        </nav>
-      </div>
-    </header>
+    <div data-header-page="home"></div>
 
     <div class="page">
       <main>
@@ -769,7 +666,13 @@
         </section>
       </main>
 
-      <footer><span>© 2015–2026 Eko Setiawan | All Rights Reserved</span></footer>
+      <footer>
+        <img
+          src="https://capsule-render.vercel.app/api?type=waving&amp;width=100%25&amp;height=120&amp;color=gradient&amp;customColorList=6,11,20&amp;text=%C2%A9%202015%20-%202026%20Eko%20Setiawan%20%7C%20All%20Rights%20Reserved&amp;fontAlignY=68&amp;fontSize=12&amp;descAlignY=88&amp;descSize=12&amp;section=footer"
+          alt="© 2015 - 2026 Eko Setiawan | All Rights Reserved"
+          loading="lazy"
+        />
+      </footer>
     </div>
   </body>
 </html>
