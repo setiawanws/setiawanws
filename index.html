@@ -369,7 +369,8 @@
         background: rgba(16, 23, 43, 0.78);
       }
 
-      .activity-visual svg {
+      .activity-visual picture,
+      .activity-visual img {
         display: block;
         width: 100%;
         height: auto;
@@ -493,13 +494,15 @@
       }
     </style>
   </head>
+
   <body>
     <header class="topbar">
       <div class="topbar-inner">
-        <a class="brand" href="#" aria-label="Eko Setiawan, beranda">Eko Setiawan<span>.</span></a>
+        <a class="brand" href="#" aria-label="Eko Setiawan, beranda"></a>
         <nav aria-label="Navigasi utama">
           <a href="#about">Tentang</a>
           <a href="#projects">Proyek</a>
+          <a href="portofolio.html">Portofolio</a>
           <a href="#skills">Keahlian</a>
           <a href="#activity">Aktivitas</a>
           <a href="#contact">Kontak</a>
@@ -682,61 +685,30 @@
 
         <section id="activity" aria-labelledby="activity-title">
           <h2 class="section-heading" id="activity-title">🚀 Activity & Contribution</h2>
-          <div class="activity-visual" role="img" aria-label="Ilustrasi aktivitas dan kontribusi">
-            <svg viewBox="0 0 900 190" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <defs>
-                <linearGradient id="activity-fill" x1="0" x2="0" y1="0" y2="1">
-                  <stop offset="0" stop-color="#66e3ee" stop-opacity=".42" />
-                  <stop offset="1" stop-color="#66e3ee" stop-opacity="0" />
-                </linearGradient>
-              </defs>
-              <g fill="#66e3ee" opacity=".58">
-                <rect x="30" y="28" width="12" height="12" rx="3"/><rect x="48" y="28" width="12" height="12" rx="3" opacity=".35"/>
-                <rect x="66" y="28" width="12" height="12" rx="3" opacity=".75"/><rect x="84" y="28" width="12" height="12" rx="3" opacity=".25"/>
-                <rect x="102" y="28" width="12" height="12" rx="3" opacity=".85"/><rect x="120" y="28" width="12" height="12" rx="3" opacity=".4"/>
-                <rect x="138" y="28" width="12" height="12" rx="3" opacity=".7"/><rect x="156" y="28" width="12" height="12" rx="3" opacity=".3"/>
-                <rect x="174" y="28" width="12" height="12" rx="3" opacity=".9"/><rect x="192" y="28" width="12" height="12" rx="3" opacity=".45"/>
-                <rect x="210" y="28" width="12" height="12" rx="3" opacity=".7"/><rect x="228" y="28" width="12" height="12" rx="3" opacity=".3"/>
-                <rect x="246" y="28" width="12" height="12" rx="3" opacity=".8"/><rect x="264" y="28" width="12" height="12" rx="3" opacity=".4"/>
-                <rect x="282" y="28" width="12" height="12" rx="3" opacity=".65"/><rect x="300" y="28" width="12" height="12" rx="3" opacity=".25"/>
-                <rect x="318" y="28" width="12" height="12" rx="3" opacity=".85"/><rect x="336" y="28" width="12" height="12" rx="3" opacity=".35"/>
-                <rect x="354" y="28" width="12" height="12" rx="3" opacity=".7"/><rect x="372" y="28" width="12" height="12" rx="3" opacity=".3"/>
-                <rect x="390" y="28" width="12" height="12" rx="3" opacity=".9"/><rect x="408" y="28" width="12" height="12" rx="3" opacity=".45"/>
-                <rect x="426" y="28" width="12" height="12" rx="3" opacity=".7"/><rect x="444" y="28" width="12" height="12" rx="3" opacity=".25"/>
-                <rect x="462" y="28" width="12" height="12" rx="3" opacity=".8"/><rect x="480" y="28" width="12" height="12" rx="3" opacity=".4"/>
-                <rect x="498" y="28" width="12" height="12" rx="3" opacity=".65"/><rect x="516" y="28" width="12" height="12" rx="3" opacity=".3"/>
-                <rect x="534" y="28" width="12" height="12" rx="3" opacity=".85"/><rect x="552" y="28" width="12" height="12" rx="3" opacity=".4"/>
-                <rect x="570" y="28" width="12" height="12" rx="3" opacity=".7"/><rect x="588" y="28" width="12" height="12" rx="3" opacity=".25"/>
-                <rect x="606" y="28" width="12" height="12" rx="3" opacity=".8"/><rect x="624" y="28" width="12" height="12" rx="3" opacity=".4"/>
-                <rect x="642" y="28" width="12" height="12" rx="3" opacity=".9"/><rect x="660" y="28" width="12" height="12" rx="3" opacity=".3"/>
-                <rect x="678" y="28" width="12" height="12" rx="3" opacity=".7"/><rect x="696" y="28" width="12" height="12" rx="3" opacity=".35"/>
-                <rect x="714" y="28" width="12" height="12" rx="3" opacity=".85"/><rect x="732" y="28" width="12" height="12" rx="3" opacity=".4"/>
-                <rect x="750" y="28" width="12" height="12" rx="3" opacity=".7"/><rect x="768" y="28" width="12" height="12" rx="3" opacity=".3"/>
-                <rect x="786" y="28" width="12" height="12" rx="3" opacity=".9"/><rect x="804" y="28" width="12" height="12" rx="3" opacity=".45"/>
-                <rect x="822" y="28" width="12" height="12" rx="3" opacity=".75"/><rect x="840" y="28" width="12" height="12" rx="3" opacity=".3"/>
-              </g>
-              <path d="M25 137 C100 128 125 142 190 118 S285 126 345 94 S440 117 510 82 S625 101 690 69 S790 86 875 48 L875 170 L25 170 Z" fill="url(#activity-fill)"/>
-              <path d="M25 137 C100 128 125 142 190 118 S285 126 345 94 S440 117 510 82 S625 101 690 69 S790 86 875 48" fill="none" stroke="#66e3ee" stroke-width="3"/>
-              <text x="30" y="163" fill="#a7b0c5" font-size="12">Contribution activity</text>
-            </svg>
+          <div class="activity-visual">
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="https://raw.githubusercontent.com/setiawanws/setiawanws/output-pacman/pacman-contribution-graph-dark.svg"
+              />
+              <source
+                media="(prefers-color-scheme: light)"
+                srcset="https://raw.githubusercontent.com/setiawanws/setiawanws/output-pacman/pacman-contribution-graph.svg"
+              />
+              <img
+                alt="Pac-Man contribution graph"
+                src="https://raw.githubusercontent.com/setiawanws/setiawanws/output-pacman/pacman-contribution-graph.svg"
+                loading="lazy"
+              />
+            </picture>
           </div>
-          <p class="offline-note">Ilustrasi lokal statis; data kontribusi langsung memerlukan koneksi ke GitHub.</p>
-        </section>
-
-        <section aria-labelledby="spotify-title">
-          <h2 class="section-heading" id="spotify-title">🎵 Currently Listening</h2>
-          <div class="spotify-card">
-            <span class="spotify-mark" aria-hidden="true">S</span>
-            <div>
-              <strong>Spotify</strong>
-              <p>Informasi lagu yang sedang diputar tersedia melalui widget Spotify di README.</p>
-            </div>
-          </div>
+          <p class="offline-note">Grafik kontribusi dimuat dari GitHub dan memerlukan koneksi internet.</p>
         </section>
 
         <section id="contact" aria-labelledby="contact-title">
           <h2 class="section-heading" id="contact-title">📬 Connect with Me</h2>
           <div class="contact">
+            
             <a href="mailto:setiawanws.me@gmail.com">Gmail</a>
             <a href="https://linkedin.com/in/eko-s-91a4b3106" target="_blank" rel="noreferrer">LinkedIn</a>
             <a href="https://instagram.com/setiawanws.me" target="_blank" rel="noreferrer">Instagram</a>

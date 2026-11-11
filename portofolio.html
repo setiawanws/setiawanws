@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portofolio proyek Eko Setiawan."
+    />
+    <meta name="theme-color" content="#0b1020" />
+    <title>Portofolio — Eko Setiawan</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        background: #0b1020;
+        color: #e7eaf3;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        --muted: #a7b0c5;
+        --line: rgba(172, 190, 225, 0.15);
+        --cyan: #66e3ee;
+        --violet: #9c8cff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        min-width: 320px;
+        min-height: 100vh;
+        margin: 0;
+        background:
+          radial-gradient(ellipse at 85% 4%, rgba(108, 87, 255, 0.17), transparent 34rem),
+          radial-gradient(ellipse at 8% 28%, rgba(45, 205, 221, 0.1), transparent 32rem),
+          #0b1020;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+        min-height: 76px;
+        background: rgba(11, 16, 32, 0.58);
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .topbar-inner {
+        display: flex;
+        width: min(1060px, calc(100% - 40px));
+        min-height: inherit;
+        align-items: center;
+        justify-content: space-between;
+        margin-inline: auto;
+      }
+
+      .brand {
+        font-size: 0.95rem;
+        font-weight: 750;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+      }
+
+      .brand span {
+        color: var(--cyan);
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 22px;
+      }
+
+      nav a {
+        color: var(--muted);
+        font-size: 0.88rem;
+        text-decoration: none;
+        transition: color 160ms ease;
+      }
+
+      nav a:hover,
+      nav a:focus-visible,
+      nav a[aria-current="page"] {
+        color: var(--cyan);
+      }
+
+      .page {
+        width: min(1060px, calc(100% - 40px));
+        margin-inline: auto;
+      }
+
+      .intro {
+        padding-block: 74px 38px;
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        color: var(--cyan);
+        font-size: 0.77rem;
+        font-weight: 750;
+        letter-spacing: 0.17em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.5rem, 7vw, 4.5rem);
+        letter-spacing: -0.06em;
+        line-height: 1.05;
+      }
+
+      h1 span {
+        color: var(--violet);
+      }
+
+      .intro-copy {
+        max-width: 640px;
+        margin: 18px 0 0;
+        color: var(--muted);
+        line-height: 1.8;
+      }
+
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        padding-bottom: 72px;
+      }
+
+      .card {
+        min-height: 190px;
+        padding: 24px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: linear-gradient(140deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.018));
+      }
+
+      .card h2 {
+        margin: 0;
+        font-size: 1.08rem;
+        letter-spacing: -0.02em;
+      }
+
+      .year {
+        display: inline-block;
+        margin-top: 9px;
+        color: var(--cyan);
+        font-size: 0.8rem;
+        font-weight: 650;
+      }
+
+      .card p {
+        margin: 15px 0 0;
+        color: var(--muted);
+        font-size: 0.92rem;
+        line-height: 1.75;
+      }
+
+      .card em {
+        color: #c6cce0;
+      }
+
+      .document-section {
+        padding-bottom: 72px;
+      }
+
+      .document-heading {
+        margin: 0;
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        letter-spacing: -0.035em;
+      }
+
+      .document-copy {
+        margin: 12px 0 20px;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .document-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 18px;
+      }
+
+      .document-link {
+        display: inline-flex;
+        min-height: 42px;
+        align-items: center;
+        padding: 0 14px;
+        border: 1px solid rgba(102, 227, 238, 0.35);
+        border-radius: 9px;
+        background: rgba(102, 227, 238, 0.08);
+        color: #d7fbff;
+        font-size: 0.88rem;
+        font-weight: 650;
+        text-decoration: none;
+      }
+
+      button.document-link {
+        font-family: inherit;
+        cursor: pointer;
+      }
+
+      .document-link:hover,
+      .document-link:focus-visible {
+        background: rgba(102, 227, 238, 0.16);
+      }
+
+      .email-dialog {
+        width: min(460px, calc(100% - 32px));
+        max-width: none;
+        padding: 26px;
+        border: 1px solid rgba(156, 140, 255, 0.32);
+        border-radius: 16px;
+        background: #11182b;
+        color: #e7eaf3;
+        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.48);
+      }
+
+      .email-dialog::backdrop {
+        background: rgba(4, 7, 16, 0.74);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+      }
+
+      .email-dialog h3 {
+        margin: 0;
+        font-size: 1.25rem;
+      }
+
+      .email-dialog-copy,
+      .email-privacy,
+      .email-status {
+        color: var(--muted);
+        font-size: 0.88rem;
+        line-height: 1.65;
+      }
+
+      .email-dialog-copy {
+        margin: 10px 0 18px;
+      }
+
+      .email-field-label {
+        display: block;
+        margin-bottom: 7px;
+        font-size: 0.88rem;
+        font-weight: 650;
+      }
+
+      .email-field {
+        width: 100%;
+        min-height: 44px;
+        padding: 0 12px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #0b1020;
+        color: #e7eaf3;
+        font: inherit;
+      }
+
+      .email-field:focus-visible {
+        outline: 2px solid var(--cyan);
+        outline-offset: 2px;
+      }
+
+      .email-consent {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 16px;
+        color: var(--muted);
+        font-size: 0.82rem;
+        line-height: 1.55;
+      }
+
+      .email-consent input {
+        margin-top: 3px;
+        accent-color: var(--cyan);
+      }
+
+      .email-privacy {
+        margin: 12px 0 0;
+        font-size: 0.78rem;
+      }
+
+      .email-dialog-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .email-status {
+        min-height: 1.5em;
+        margin: 14px 0 0;
+      }
+
+      .email-status[data-state="error"] {
+        color: #ff9aab;
+      }
+
+      .email-status[data-state="success"] {
+        color: #8de8b0;
+      }
+
+      .email-honeypot {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        clip-path: inset(50%);
+      }
+
+      .document-viewer {
+        display: block;
+        width: 100%;
+        height: min(78vh, 960px);
+        min-height: 560px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: #fff;
+      }
+
+      .document-content {
+        display: grid;
+        gap: 16px;
+        margin-top: 24px;
+      }
+
+      .document-chapter {
+        padding: 24px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: linear-gradient(140deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.018));
+      }
+
+      .document-chapter h3 {
+        margin: 0;
+        font-size: 1.08rem;
+        letter-spacing: -0.02em;
+      }
+
+      .document-chapter p,
+      .document-chapter li {
+        color: var(--muted);
+        font-size: 0.92rem;
+        line-height: 1.75;
+      }
+
+      .document-chapter p {
+        margin: 13px 0 0;
+      }
+
+      .document-chapter ul {
+        display: grid;
+        gap: 7px;
+        margin: 14px 0 0;
+        padding-left: 21px;
+      }
+
+      .document-chapter strong {
+        color: #e7eaf3;
+      }
+
+      .document-period {
+        display: inline-block;
+        margin-top: 8px;
+        color: var(--cyan);
+        font-size: 0.8rem;
+        font-weight: 650;
+      }
+
+      .document-contacts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+        margin-top: 14px;
+      }
+
+      .document-contacts a {
+        color: var(--cyan);
+        overflow-wrap: anywhere;
+      }
+
+      .original-document {
+        margin-top: 24px;
+        border-top: 1px solid var(--line);
+      }
+
+      .original-document summary {
+        padding-block: 18px;
+        color: #d7fbff;
+        cursor: pointer;
+        font-weight: 650;
+      }
+
+      .document-fallback {
+        margin: 0 0 12px;
+        color: var(--muted);
+        font-size: 0.88rem;
+        line-height: 1.65;
+      }
+
+      footer {
+        padding: 24px 20px 32px;
+        border-top: 1px solid var(--line);
+        color: #8791a8;
+        font-size: 0.82rem;
+        text-align: center;
+      }
+
+      @media (max-width: 680px) {
+        .topbar {
+          min-height: 66px;
+        }
+
+        .topbar-inner {
+          width: min(100% - 32px, 520px);
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 12px;
+          padding-block: 14px;
+        }
+
+        nav {
+          gap: 12px;
+        }
+
+        nav a {
+          font-size: 0.78rem;
+        }
+
+        .page {
+          width: min(100% - 32px, 520px);
+        }
+
+        .intro {
+          padding-top: 54px;
+        }
+
+        .project-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 390px) {
+        nav {
+          gap: 9px;
+        }
+
+        nav a {
+          font-size: 0.72rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="index.html" aria-label="Kembali ke beranda"></a>
+        <nav aria-label="Navigasi utama">
+          <a href="index.html#about">Tentang</a>
+          <a href="index.html#projects">Proyek</a>
+          <a href="portofolio.html" aria-current="page">Portofolio</a>
+          <a href="index.html#skills">Keahlian</a>
+          <a href="index.html#activity">Aktivitas</a>
+          <a href="index.html#contact">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="intro" aria-labelledby="portfolio-title">
+        <p class="eyebrow">📂 Selected Work</p>
+        <h1 id="portfolio-title">Porto<span>folio.</span></h1>
+        <p class="intro-copy">
+          Pilihan proyek yang saya kembangkan dan dukung bersama tim, dari sistem
+          persediaan hingga pemantauan infrastruktur dan aplikasi kepatuhan.
+        </p>
+      </section>
+
+      <section class="project-grid" aria-label="Daftar proyek">
+        <article class="card">
+          <h2>🏗️ PLB/GB/INKABER</h2>
+          <span class="year">2022 — 2026</span>
+          <p>
+            Mengembangkan varian sistem informasi persediaan (IT Inventory)
+            berbasis web untuk memenuhi ketentuan kepabeanan Direktorat Jenderal
+            Bea dan Cukai.<br />
+            <em>Designed and developed web-based inventory systems to meet customs
+            compliance requirements.</em>
+          </p>
+        </article>
+        <article class="card">
+          <h2>🖥 Data Center Monitoring (DCOSS)</h2>
+          <span class="year">2021 — 2022</span>
+          <p>
+            Mengembangkan dashboard real-time untuk memonitor sensor suhu dan
+            kelembapan pada infrastruktur data center.<br />
+            <em>Developed a real-time dashboard to monitor data-center temperature
+            and humidity.</em>
+          </p>
+        </article>
+        <article class="card">
+          <h2>🏦 Aplikasi Kepatuhan</h2>
+          <span class="year">2020 — 2021</span>
+          <p>
+            Membangun sistem informasi kepatuhan bersama tim untuk mendukung
+            proses bisnis dan kebutuhan regulasi di BPKH.<br />
+            <em>Collaborated to build a compliance information system supporting
+            business and regulatory needs.</em>
+          </p>
+        </article>
+        <article class="card">
+          <h2>📦 Inventory Management</h2>
+          <span class="year">2017 — 2019</span>
+          <p>
+            Membangun aplikasi inventaris internal perusahaan untuk mendukung
+            pengelolaan aset dan stok.<br />
+            <em>Built an internal inventory application for managing company assets
+            and stock.</em>
+          </p>
+        </article>
+      </section>
+
+      <section class="document-section" aria-labelledby="document-title">
+        <h2 class="document-heading" id="document-title">Dokumen Portofolio Lengkap</h2>
+        <p class="document-copy">
+          Berikut isi portofolio yang disusun menjadi konten halaman. PDF asli
+          tetap tersedia di bagian bawah untuk melihat seluruh gambar dan halaman
+          proyek seperti dokumen sumber.
+        </p>
+        <div class="document-actions">
+          <button class="document-link" id="request-download-trigger" type="button">
+            Unduh PDF
+          </button>
+        </div>
+
+        <dialog class="email-dialog" id="email-request-dialog" aria-labelledby="email-dialog-title">
+          <h3 id="email-dialog-title">Sebelum mengunduh</h3>
+          <p class="email-dialog-copy">
+            Masukkan email Anda. Permintaan unduhan akan dikirim ke
+            setiawanws.me@gmail.com.
+          </p>
+          <form id="email-request-form">
+            <input type="hidden" name="_subject" value="Permintaan unduh portofolio" />
+            <input
+              type="hidden"
+              name="message"
+              value="Pengunjung meminta mengunduh Portofolio_Eko-hery-setiawan_compressed.pdf."
+            />
+            <div class="email-honeypot" aria-hidden="true">
+              <label for="email-website">Leave this field empty</label>
+              <input id="email-website" name="_honey" tabindex="-1" autocomplete="off" />
+            </div>
+            <label class="email-field-label" for="visitor-email">Email Anda</label>
+            <input
+              class="email-field"
+              id="visitor-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="nama@email.com"
+              required
+            />
+            <label class="email-consent">
+              <input name="consent" type="checkbox" value="yes" required />
+              <span>
+                Saya setuju alamat email dikirim melalui FormSubmit dan diteruskan
+                kepada pemilik situs untuk permintaan unduhan ini.
+              </span>
+            </label>
+            <p class="email-privacy">
+              FormSubmit adalah layanan pihak ketiga dan menyimpan kiriman selama
+              30 hari. Pengiriman pertama memerlukan aktivasi email penerima.
+            </p>
+            <div class="email-dialog-actions">
+              <button class="document-link" id="submit-email-request" type="submit">
+                Kirim permintaan
+              </button>
+              <button class="document-link" id="close-email-dialog" type="button">
+                Batal
+              </button>
+            </div>
+            <p class="email-status" id="email-request-status" role="status" aria-live="polite"></p>
+          </form>
+          <div id="email-request-success" hidden>
+            <p class="email-status" data-state="success" role="status">
+              Permintaan diterima FormSubmit, tetapi ini belum memastikan email sudah masuk.
+              Jika ini pengiriman pertama, pemilik situs harus mengaktifkan alamat penerima
+              melalui email dari FormSubmit. Setelah aktivasi, kirim ulang permintaan bila
+              email sebelumnya belum diteruskan.
+            </p>
+            <a
+              class="document-link"
+              href="assets/Portofolio_Eko-hery-setiawan_compressed.pdf"
+              download
+            >Unduh PDF</a>
+          </div>
+        </dialog>
+
+        <div class="document-content">
+
+          <article class="document-chapter">
+            <h3>IT Support</h3>
+            <span class="document-period">2014 — 2017</span>
+            <p>
+              Memulai karier di bidang IT sebagai freelance IT Support, menangani
+              kebutuhan teknis di beberapa perusahaan dan memastikan perangkat IT
+              berjalan optimal melalui pemeliharaan, perbaikan, serta
+              troubleshooting.
+            </p>
+            <ul>
+              <li>Merawat dan memperbaiki perangkat komputer (hardware dan software).</li>
+              <li>Menginstal dan mengonfigurasi sistem operasi serta aplikasi pendukung.</li>
+              <li>Melakukan maintenance dan troubleshooting printer.</li>
+              <li>Menginstal, mengonfigurasi, dan memelihara sistem CCTV.</li>
+              <li>Memberikan dukungan teknis kepada pengguna (end-user support).</li>
+              <li>Melakukan pengecekan berkala untuk menjaga stabilitas dan keamanan perangkat.</li>
+            </ul>
+            <p>
+              <strong>Perusahaan:</strong> CV. Kreatif Mandiri, PT. Agni Putra Jaya,
+              dan PT. Indojaya Sukses.
+            </p>
+          </article>
+
+          <article class="document-chapter">
+            <h3>Aplikasi BPKH</h3>
+            <span class="document-period">2020 — 2021 · PT. Prospero</span>
+            <p>
+              Pembuatan aplikasi untuk kebutuhan BPKH. Halaman yang ditampilkan
+              dalam dokumen meliputi halaman login, dashboard, dan master data.
+            </p>
+          </article>
+
+          <article class="document-chapter">
+            <h3>Data Center Monitoring (DCOSS)</h3>
+            <span class="document-period">2021 — 2022 · PT. Sukses Teknologi</span>
+            <p>
+              Aplikasi pemantauan untuk Balai Kota DKI Jakarta. Dokumen menampilkan
+              dashboard pemantauan serta grafik tren suhu pada infrastruktur data
+              center.
+            </p>
+          </article>
+
+          <article class="document-chapter">
+            <h3>IT Inventory — PLB, GB, dan E-INKABER</h3>
+            <span class="document-period">2022 — 2026 · PT. EDI Indonesia</span>
+            <p>
+              Pengembangan tiga aplikasi persediaan untuk mendukung proses bisnis
+              kepabeanan: PLB (Pusat Logistik Berikat), GB (Gudang Berikat), dan
+              E-INKABER. Dokumen memperlihatkan alur proses dan pemasukan barang
+              sesuai kebutuhan masing-masing aplikasi.
+            </p>
+          </article>
+          
+        </div>
+        
+      </section>
+    </main>
+
+    <footer>© 2015–2026 Eko Setiawan | All Rights Reserved</footer>
+    <script>
+      const emailDialog = document.querySelector("#email-request-dialog");
+      const emailForm = document.querySelector("#email-request-form");
+      const emailStatus = document.querySelector("#email-request-status");
+      const emailSuccess = document.querySelector("#email-request-success");
+      const emailSubmitButton = document.querySelector("#submit-email-request");
+      const downloadTrigger = document.querySelector("#request-download-trigger");
+      let requestAccepted = false;
+
+      downloadTrigger.addEventListener("click", () => {
+        if (requestAccepted) {
+          emailSuccess.hidden = false;
+        } else {
+          emailForm.hidden = false;
+          emailSuccess.hidden = true;
+        }
+        emailStatus.textContent = "";
+        emailStatus.removeAttribute("data-state");
+        emailDialog.showModal();
+      });
+
+      document.querySelector("#close-email-dialog").addEventListener("click", () => {
+        emailDialog.close();
+      });
+
+      emailForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        if (!emailForm.reportValidity()) return;
+
+        emailSubmitButton.disabled = true;
+        emailStatus.textContent = "Mengirim permintaan...";
+        emailStatus.removeAttribute("data-state");
+
+        try {
+          const response = await fetch("https://formsubmit.co/ajax/setiawanws.me@gmail.com", {
+            method: "POST",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+            },
+            body: new URLSearchParams(new FormData(emailForm)),
+          });
+          const result = await response.json();
+
+          if (!response.ok || result.success !== true && result.success !== "true") {
+            throw new Error(result.message || "Layanan email tidak dapat menerima permintaan.");
+          }
+
+          requestAccepted = true;
+          emailForm.hidden = true;
+          emailSuccess.hidden = false;
+        } catch (error) {
+          emailStatus.dataset.state = "error";
+          emailStatus.textContent =
+            error instanceof Error
+              ? `${error.message} Periksa koneksi internet dan coba lagi.`
+              : "Permintaan gagal dikirim. Periksa koneksi internet dan coba lagi.";
+        } finally {
+          emailSubmitButton.disabled = false;
+        }
+      });
+    </script>
+  </body>
+</html>
